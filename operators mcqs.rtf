@@ -1,0 +1,3289 @@
+{\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Calibri;}{\f1\fnil Calibri;}}
+{\*\generator Riched20 10.0.22621}\viewkind4\uc1 
+\pard\sa200\sl276\slmult1\f0\fs22\lang9 What will be the output of the following C code?\par
+\par
+#include <stdio.h>\par
+void main()\par
+\{\par
+    int a = 3;\par
+    int b = ++a + a++ + --a;\par
+    printf("Value of b is %d", b);\par
+\}\par
+\par
+\par
+Value of x is 12\par
+\par
+\par
+Value of x is 13\par
+\par
+\par
+Value of x is 10\par
+\par
+\par
+Undefined behaviour\par
+\par
+Question: 2\par
+What is the precedence of arithmetic operators (from highest to lowest)?\par
+\par
+\par
+\par
+%, *, /, +, \f1\endash\par
+\par
+\par
+%, +, /, *, \endash\par
+\par
+\par
++, -, %, *, /\par
+\par
+\par
+%, +, -, *, /\par
+\par
+Question: 3\par
+Which of the following is not an arithmetic operation?\par
+\par
+\par
+\par
+a * = 10;\par
+\par
+\par
+a / = 10;\par
+\par
+\par
+a ! = 10;\par
+\par
+\par
+a % = 10;\par
+\par
+Question: 4\par
+Which of the following data type will throw an error on modulus operation(%)?\par
+\par
+\par
+\par
+char\par
+\par
+\par
+short\par
+\par
+\par
+int\par
+\par
+\par
+float\par
+\par
+Question: 5\par
+Which among the following are the fundamental arithmetic operators, i.e, performing the desired operation can be done using that operator only?\par
+\par
+\par
+\par
++,-\par
+\par
+\par
++,-,%\par
+\par
+\par
++, -, *, /\par
+\par
+\par
++, -, *, /, %\par
+\par
+Question: 6\par
+What will be the output of the following C code?\par
+#include\par
+int main()\par
+\{\par
+int a = 10;\par
+double b = 5.6;\par
+int c;\par
+c = a + b;\par
+printf(\ldblquote %d\rdblquote , c);\par
+\}\par
+\par
+\par
+\par
+15\par
+\par
+\par
+16\par
+\par
+\par
+15.6\par
+\par
+\par
+10\par
+\par
+Question: 7\par
+What will be the output of the following C code?\par
+\par
+#include <stdio.h>\par
+int main()\par
+\{\par
+    int a = 10, b = 5, c = 5;\par
+    int d;\par
+    d = a == (b + c);\par
+    printf("%d", d);\par
+\}\par
+\par
+\par
+Syntax error\par
+\par
+\par
+1\par
+\par
+\par
+10\par
+\par
+\par
+5\par
+\par
+Question: 8\par
+What will be the output of the following C code?\par
+\par
+#include <stdio.h>\par
+void main()\par
+\{\par
+    int x = 1, y = 0, z = 5;\par
+    int a = x && y || z++;\par
+    printf("%d", z);\par
+\}\par
+\par
+\par
+6\par
+\par
+\par
+5\par
+\par
+\par
+0\par
+\par
+\par
+Varies\par
+\par
+Question: 9\par
+What will be the output of the following C code?\par
+\par
+#include <stdio.h>\par
+void main()\par
+\{\par
+    int x = 1, y = 0, z = 5;\par
+    int a = x && y && z++;\par
+    printf("%d", z);\par
+\}\par
+\par
+\par
+6\par
+\par
+\par
+5\par
+\par
+\par
+0\par
+\par
+\par
+Varies\par
+\par
+Question: 10\par
+What will be the output of the following C code?\par
+\par
+#include <stdio.h>\par
+int main()\par
+\{\par
+    int x = 1, y = 0, z = 3;\par
+    x > y ? printf("%d", z) : return z;\par
+\}\par
+\par
+\par
+3\par
+\par
+\par
+1\par
+\par
+\par
+Compile time error\par
+\par
+\par
+Run time error\par
+\par
+Question: 11\par
+What will be the output of the following C code?\par
+\par
+#include <stdio.h>\par
+void main()\par
+\{\par
+    int x = 1, z = 3;\par
+    int y = x << 3;\par
+    printf(" %d\\n", y);\par
+\}\par
+\par
+\par
+-2147483648\par
+\par
+\par
+-1\par
+\par
+\par
+Run time error\par
+\par
+\par
+8\par
+\par
+Question: 12\par
+What will be the output of the following C code?\par
+\par
+#include <stdio.h>\par
+void main()\par
+\{\par
+    int x = 0, y = 2, z = 3;\par
+    int a = x & y | z;\par
+    printf("%d", a);\par
+\}\par
+\par
+\par
+3\par
+\par
+\par
+0\par
+\par
+\par
+2\par
+\par
+\par
+Run time error\par
+\par
+Question: 13\par
+What will be the final value of j in the following C code?\par
+\par
+#include <stdio.h>\par
+int main()\par
+\{\par
+    int i = 0, j = 0;\par
+    if (i && (j = i + 10))\par
+        //do something\par
+        ;\par
+\}\par
+\par
+\par
+0\par
+\par
+\par
+10\par
+\par
+\par
+Depends on the compiler\par
+\par
+\par
+Depends on language standard\par
+\par
+Question: 14\par
+What will be the final value of j in the following C code?\par
+\par
+#include <stdio.h>\par
+int main()\par
+\{\par
+    int i = 10, j = 0;\par
+    if (i || (j = i + 10))\par
+        //do something\par
+        ;\par
+\}\par
+\par
+\par
+0\par
+\par
+\par
+20\par
+\par
+\par
+Compile time error\par
+\par
+\par
+Depends on language standard\par
+\par
+Question: 15\par
+What will be the output of the following C code?\par
+\par
+#include <stdio.h>\par
+int main()\par
+\{\par
+    int i = 1;\par
+    if (i++ && (i == 1))\par
+        printf("Yes\\n");\par
+    else\par
+        printf("No\\n");\par
+\}\par
+\par
+\par
+Yes\par
+\par
+\par
+No\par
+\par
+\par
+Depends on the compiler\par
+\par
+\par
+Depends on the standard\par
+\par
+Question: 16\par
+Are logical operator sequence points?\par
+\par
+\par
+\par
+True\par
+\par
+\par
+False\par
+\par
+\par
+Depends on the compiler\par
+\par
+\par
+Depends on the standard\par
+\par
+Question: 17\par
+Do logical operators in the C language are evaluated with the short circuit?\par
+\par
+\par
+\par
+True\par
+\par
+\par
+False\par
+\par
+\par
+Depends on the compiler\par
+\par
+\par
+Depends on the standard\par
+Answer:- a\par
+\par
+Question: 18\par
+What is the result of logical or relational expression in C?\par
+\par
+\par
+\par
+True or False\par
+\par
+\par
+0 or 1\par
+\par
+\par
+0 if an expression is false and any positive number if an expression is true\par
+\par
+\par
+None of the mentioned\par
+\par
+Question: 19\par
+What will be the final value of d in the following C code?\par
+#include\par
+int main()\par
+\{\par
+int a = 10, b = 5, c = 5;\par
+int d;\par
+d = b + c == a;\par
+printf(\ldblquote %d\rdblquote , d);\par
+\}\par
+\par
+\par
+\par
+Syntax error\par
+\par
+\par
+1\par
+\par
+\par
+5\par
+\par
+\par
+10\par
+\par
+Question: 20\par
+What will be the output of the following C code?\par
+\par
+#include <stdio.h>\par
+int main()\par
+\{\par
+    int a = 10, b = 5, c = 3;\par
+    b != !a;\par
+    c = !!a;\par
+    printf("%d\\t%d", b, c);\par
+\}\par
+\par
+\par
+5 1\par
+\par
+\par
+0 3\par
+\par
+\par
+5 3\par
+\par
+\par
+1 1\par
+\par
+Question: 21\par
+Which among the following is NOT a logical or relational operator?\par
+\par
+\par
+\par
+!=\par
+\par
+\par
+==\par
+\par
+\par
+||\par
+\par
+\par
+=\par
+\par
+Question: 22\par
+What will be the output of the following C code?\par
+\par
+#include <stdio.h>\par
+int main()\par
+\{\par
+    int a = 10;\par
+    if (a == a--)\par
+        printf("TRUE 1\\t");\par
+    a = 10;\par
+    if (a == --a)\par
+        printf("TRUE 2\\t");\par
+\}\par
+\par
+\par
+TRUE 1\par
+\par
+\par
+TRUE 2\par
+\par
+\par
+TRUE 1\emspace  TRUE 2\par
+\par
+\par
+Compiler Dependent\par
+\par
+Question: 23\par
+Relational operators cannot be used on ________\par
+\par
+\par
+\par
+structure\par
+\par
+\par
+long\par
+\par
+\par
+strings\par
+\par
+\par
+float\par
+\par
+Question: 24\par
+Choose a correct statement.\par
+int a = 12 + 3 * 5 / 4 - 10\par
+\par
+\par
+\par
+12, 3, 5, 4 and 10 are Operators.\par
++, -, * and / are Operands.\par
+= is an increment operator.\par
+\par
+\par
+12, 3, 5, 4 and 10 are Operands.\par
++, -, * and / are Operators.\par
+= is decrement operator.\par
+\par
+\par
+12, 3, 5, 4 and 10 are Operands.\par
++, -, * and / are Operators.\par
+= is an assignment operator.\par
+\par
+\par
+12, 3, 5, 4 and 10 are Operands.\par
++, -, * and / are Logical Operators.\par
+= is an assignment operator.\par
+\par
+Question: 25\par
+Operator % in C Language is called.?\par
+\par
+\par
+\par
+Percentage Operator\par
+\par
+\par
+Quotient Operator\par
+\par
+\par
+Modulus\par
+\par
+\par
+Division\par
+\par
+Question: 26\par
+Output of an arithmetic expression with integers and real numbers is _ by default.?\par
+\par
+\par
+\par
+Integer\par
+\par
+\par
+Real number\par
+\par
+\par
+Depends on the numbers used in the expression.\par
+\par
+\par
+None of the above\par
+\par
+Question: 27\par
+Choose a right statement.\par
+int a = 10 + 4.867;\par
+\par
+\par
+\par
+a=10\par
+\par
+\par
+a=14.867\par
+\par
+\par
+a=14\par
+\par
+\par
+compiler error.\par
+\par
+Question: 28\par
+Choose a right statement.\par
+int a = 3.5 + 4.5;\par
+\par
+\par
+\par
+a=0\par
+\par
+\par
+a=7\par
+\par
+\par
+a=8\par
+\par
+\par
+a=8.0\par
+\par
+Question: 29\par
+Choose a right statement.\par
+float var = 3.5 + 4.5;\par
+\par
+\par
+\par
+var = 8.0\par
+\par
+\par
+var = 8\par
+\par
+\par
+var = 7\par
+\par
+\par
+var = 0.0\par
+\par
+Question: 30\par
+Choose right statement.\par
+int main()\par
+\{\par
+float c = 3.5 + 4.5;\par
+printf(\ldblquote %f\rdblquote , c);\par
+\par
+return 0;\par
+\}\par
+\par
+\par
+\par
+8.0\par
+\par
+\par
+8.000000\par
+\par
+\par
+8\par
+\par
+\par
+7\par
+\par
+Question: 31\par
+Choose a right statement.\par
+int main()\par
+\{\par
+float c = 3.5 + 4.5;\par
+printf(\ldblquote %d\rdblquote , (int)c);\par
+\par
+return 0;\par
+\}\par
+\par
+\par
+\par
+8.0\par
+\par
+\par
+8.000000\par
+\par
+\par
+7\par
+\par
+\par
+8\par
+\par
+Question: 32\par
+Choose a right statement.\par
+int a = 5/2;\par
+int b = 5.0/2;\par
+int c = 5 / 2.0;\par
+int d = 5.0/2.0;\par
+\par
+\par
+\par
+a = 2, b = 2, c = 2, d= 2\par
+\par
+\par
+a = 2, b = 2.0, c = 2, d= 2.0\par
+\par
+\par
+a = 2, b = 2.5, c = 2.5, d= 2.5\par
+\par
+\par
+a = 2.5, b = 2.5, c = 2.5, d= 2.5\par
+\par
+Question: 33\par
+Choose a right statement.\par
+float a = 5/2;\par
+float b = 5/2.0;\par
+float c = 5.0/2;\par
+float d = 5.0/2.0;\par
+\par
+\par
+\par
+a=2.5, b=2.5, c=2.5, d=2.5\par
+\par
+\par
+a=2, b=2.5, c=2.5, d=2.5\par
+\par
+\par
+a=2.0, b=2.5, c=2.5, d=2.5\par
+\par
+\par
+a=2.0, b=2.0, c=2.0, d=2.0\par
+\par
+Question: 34\par
+If both numerator and denominator of a division operation in C language are integers, then we get.?\par
+\par
+\par
+\par
+Expected algebraic real value\par
+\par
+\par
+Unexpected integer value\par
+\par
+\par
+Compiler error.\par
+\par
+\par
+None of the above\par
+\par
+Question: 35\par
+Choose a right statement.\par
+int var = 3.5;\par
+\par
+\par
+\par
+a=3.5\par
+\par
+\par
+a=3\par
+\par
+\par
+a=0\par
+\par
+\par
+Compiler error\par
+\par
+Question: 36\par
+Choose a right statement.\par
+int main()\par
+\{\par
+int var = 3.5;;\par
+printf(\ldblquote %f\rdblquote , var);\par
+\par
+return 0;\par
+\}\par
+\par
+\par
+\par
+3.500000\par
+\par
+\par
+3\par
+\par
+\par
+3.5\par
+\par
+\par
+0.000000\par
+\par
+Question: 37\par
+What is the output of the program.?\par
+int main()\par
+\{\par
+int a = 25%10;\par
+printf(\ldblquote %d\rdblquote , a);\par
+\par
+return 0;\par
+\}\par
+\par
+\par
+\par
+2.5\par
+\par
+\par
+2\par
+\par
+\par
+5\par
+\par
+\par
+Compiler error.\par
+\par
+Question: 38\par
+Can you use C Modulo Division operator % with float and int?\par
+\par
+\par
+\par
+Only int variables = Okay\par
+\par
+\par
+Only float variables = Okay\par
+\par
+\par
+int or float combination = Okay\par
+\par
+\par
+Numerator int variable, Denominator any variable = Okay\par
+\par
+Question: 39\par
+What is the output of the C program with Modulo Division operator with - or Negative numbers.?\par
+int main()\par
+\{\par
+int a = -25%-10;\par
+int b = -25%10;\par
+int c = 25%-10;\par
+\par
+printf("%d %d %d", a, b, c);\par
+\par
+return 0;\par
+\}\par
+\par
+\par
+\par
+5 -5 -5\par
+\par
+\par
+5 -5 5\par
+\par
+\par
+-5 -5 5\par
+\par
+\par
+5 5 5\par
+\par
+Question: 40\par
+What is the output of the program.?\par
+int main()\par
+\{\par
+float a = 45;\par
+printf(\ldblquote %f\rdblquote , a);\par
+\par
+return 0;\par
+\}\par
+\par
+\par
+\par
+45\par
+\par
+\par
+45.0\par
+\par
+\par
+45.000000\par
+\par
+\par
+0.000000\par
+\par
+Question: 41\par
+What is the priority of operators *, / and % in C language.?\par
+\par
+\par
+\par
+> / > %\par
+\par
+% > * > /\par
+\par
+\par
+Both % = / , * are same\par
+\par
+\par
+All three operators *, / and % are same.\par
+\par
+Question: 42\par
+In C language, which Operator group has more priority between (*, / and %) and (+, -) groups.?\par
+\par
+\par
+\par
+Both groups share equal priority.\par
+\par
+\par
+(+, -) > (*, / and %)\par
+\par
+\par
+(+, -) < (*, / and %)\par
+\par
+\par
+None of the above.\par
+\par
+Question: 43\par
+Associativity of C Operators *, /, %, +, - and = is.?\par
+\par
+\par
+\par
+Operators *, / and % have Left to Right Associativity. Operators + and - have Left to Right Associativity. Operator = has Right to Left Associativitiy.\par
+\par
+\par
+Operators *, / and % have Right to Left Associativity. Operators + and - have Left to Right Associativity. Operator = has Right to Left Associativitiy.\par
+\par
+\par
+Operators *, / and % have Right to Left Associativity. Operators + and - have Right to Left Associativity. Operator = has Right to Left Associativitiy.\par
+\par
+\par
+Operators *, / and % have Right to Left Associativity. Operators + and - have Right to Left Associativity. Operator = has Left to Right Associativitiy.\par
+\par
+Question: 44\par
+What is the Priority among (*, /, %), (+, -) and (=) C Operators.?\par
+\par
+\par
+\par
+(*, /, %) > (+, -) < (=)\par
+\par
+\par
+(*, /, %) < (+, -) < (=)\par
+\par
+\par
+(*, /, %) > (+, -) > (=)\par
+\par
+\par
+(*, /, %) < (+, -)\par
+(+, -) == (=)\par
+\par
+Question: 45\par
+What is the output of the C statement.?\par
+int main()\par
+\{\par
+int a=0;\par
+a = 4 + 4/2*5 + 20;\par
+printf(\ldblquote %d\rdblquote , a);\par
+\par
+return 0;\par
+\}\par
+\par
+\par
+\par
+40\par
+\par
+\par
+4\par
+\par
+\par
+34\par
+\par
+\par
+54\par
+\par
+Question: 46\par
+What is the output of the C Program.?\par
+int main()\par
+\{\par
+int a=0;\par
+a = 10 + 5 * 2 * 8 / 2 + 4;\par
+printf(\ldblquote %d\rdblquote , a);\par
+\par
+return 0;\par
+\}\par
+\par
+\par
+\par
+124\par
+\par
+\par
+54\par
+\par
+\par
+23\par
+\par
+\par
+404\par
+\par
+Question: 47\par
+What is the output of the C Program.?\par
+int main()\par
+\{\par
+int a=0;\par
+a = 4 + 5/2*10 + 5;\par
+printf(\ldblquote %d\rdblquote , a);\par
+\par
+return 0;\par
+\}\par
+\par
+\par
+\par
+29\par
+\par
+\par
+5\par
+\par
+\par
+4\par
+\par
+\par
+34\par
+\par
+Question: 48\par
+What is the output of the C Program.?\par
+int main()\par
+\{\par
+int a=0;\par
+a = 10 + 2 * 12 /(3*2) + 5;\par
+printf(\ldblquote %d\rdblquote , a);\par
+\par
+return 0;\par
+\}\par
+\par
+\par
+\par
+31\par
+\par
+\par
+19\par
+\par
+\par
+11\par
+\par
+\par
+29\par
+\par
+Question: 49\par
+What is the output of the C Program.?\par
+int main()\par
+\{\par
+int a=0;\par
+a = 10 + 2 * 12 / 3 * 2 + 5;\par
+printf(\ldblquote %d\rdblquote , a);\par
+\par
+return 0;\par
+\}\par
+\par
+\par
+\par
+19\par
+\par
+\par
+31\par
+\par
+\par
+11\par
+\par
+\par
+25\par
+\par
+Question: 50\par
+What is the output of the C Program.?\par
+int main()\par
+\{\par
+float a=10.0;\par
+a = a % 3;\par
+printf(\ldblquote %f\rdblquote , a);\par
+\par
+return 0;\par
+\}\par
+\par
+\par
+\par
+0\par
+\par
+\par
+1\par
+\par
+\par
+1.000000\par
+\par
+\par
+Compiler error.\par
+\par
+Question: 51\par
+What is the output of the C Program.?\par
+int main()\par
+\{\par
+float a=10.0;\par
+a = (int)a % 3;\par
+printf(\ldblquote %f\rdblquote , a);\par
+\par
+return 0;\par
+\}\par
+\par
+\par
+\par
+0\par
+\par
+\par
+1\par
+\par
+\par
+1.000000\par
+\par
+\par
+Compiler Error.\par
+\par
+Question: 52\par
+What is the output of the C Program.?\par
+int main()\par
+\{\par
+int a=0;\par
+a = 14%-5 - 2;\par
+printf(\ldblquote %d\rdblquote , a);\par
+\par
+return 0;\par
+\}\par
+\par
+\par
+\par
+0\par
+\par
+\par
+2\par
+\par
+\par
+-4\par
+\par
+\par
+-2\par
+\par
+Question: 53\par
+What is the output of the C Program.?\par
+int main()\par
+\{\par
+int a= 3 + 5/2;\par
+printf(\ldblquote %d\rdblquote , a);\par
+\par
+return 0;\par
+\}\par
+\par
+\par
+\par
+3\par
+\par
+\par
+2\par
+\par
+\par
+5\par
+\par
+\par
+Can not assign an expression to variable at the time of declaration.\par
+\par
+Question: 54\par
+Integer division in a \lquote C\rquote  program results in:\par
+\par
+\par
+\par
+Truncation\par
+\par
+\par
+Rounding\par
+\par
+\par
+Underflow\par
+\par
+\par
+None of these\par
+\par
+Question: 55\par
+In a \lquote C\rquote expression involving || operator, evaluation\par
+\par
+\par
+\par
+Will be stopped if one of its components evaluates to false\par
+\par
+\par
+Will be stopped if one of its components evaluates to true\par
+\par
+\par
+Takes place from right to left\par
+\par
+\par
+None of these\par
+\par
+Question: 56\par
+What is the other name of Question Mark Colon Operator?\par
+\par
+\par
+\par
+Comparison Operator\par
+\par
+\par
+If-Else Operator\par
+\par
+\par
+Binary Operator\par
+\par
+\par
+Ternary Operator\par
+\par
+Question: 57\par
+In C programming language, which of the following type of operators have the highest precedence\par
+\par
+\par
+\par
+Relational Operators\par
+\par
+\par
+Equality Operators\par
+\par
+\par
+Logical Operators\par
+\par
+\par
+Arithmetic Operators\par
+\par
+Question: 58\par
+Which of the following comments about the ++ operator are correct?\par
+\par
+\par
+\par
+It is a unary operator\par
+\par
+\par
+The operand can come before or after the operator\par
+\par
+\par
+It cannot be applied to an expression\par
+\par
+\par
+It associates from the right\par
+\par
+\par
+All of the above\par
+\par
+Question: 59\par
+What number will z in the sample code given below?\par
+int z, x = 5, y = -10, a = 4, b = 2;\par
+z = x++ - \endash y*b/a;\par
+\par
+\par
+\par
+5\par
+\par
+\par
+6\par
+\par
+\par
+9\par
+\par
+\par
+10\par
+\par
+\par
+11\par
+\par
+Question: 60\par
+Which operator from the following has the lowest priority?\par
+\par
+\par
+\par
+Assignment Operator\par
+\par
+\par
+Division Operator\par
+\par
+\par
+Comma Operator\par
+\par
+\par
+Conditional Operator\par
+\par
+\par
+Unary Operator\par
+\par
+Question: 61\par
+Given b = 110 and c = 20, what is the value of \lquote a\rquote  after execution of the expression a = b = c*=5?\par
+\par
+\par
+\par
+450\par
+\par
+\par
+10\par
+\par
+\par
+110\par
+\par
+\par
+-10\par
+\par
+\par
+-110\par
+\par
+Question: 62\par
+In C programming language, which of the following type of operators have the highest precedence\par
+\par
+\par
+\par
+Relational operators\par
+\par
+\par
+Equality operators\par
+\par
+\par
+Logical operators\par
+\par
+\par
+Arithmetic operators\par
+\par
+Question: 63\par
+In C programming language, which of the following operator has the highest precedence?\par
+\par
+\par
+\par
+Unary +\par
+\par
+\par
+*\par
+\par
+\par
+=\par
+\par
+\par
+= =\par
+\par
+Question: 64\par
+Which of the following operators takes only integer operands?\par
+\par
+\par
+\par
++\par
+\par
+\par
+*\par
+\par
+\par
+/\par
+\par
+\par
+%\par
+\par
+Question: 65\par
+In an expression involving || operator, evaluation\par
+I. Will be stopped if one of its components evaluates to false\par
+II. Will be stopped if one of its components evaluates to false\par
+III. Takes place from right to left\par
+IV. Takes place from left to right\par
+\par
+\par
+\par
+l and ll\par
+\par
+\par
+l and lll\par
+\par
+\par
+ll and lll\par
+\par
+\par
+ll and lV\par
+\par
+Question: 66\par
+Operator % in C Language is called?\par
+\par
+\par
+\par
+Percentage Operator\par
+\par
+\par
+Quotient Operator\par
+\par
+\par
+Modulus\par
+\par
+\par
+Division\par
+\par
+Question: 67\par
+Output of an arithmetic expression with integers and real numbers is _ by default?\par
+\par
+\par
+\par
+Integer\par
+\par
+\par
+Real number\par
+\par
+\par
+Depends on the numbers used in the expression\par
+\par
+\par
+None of the above\par
+\par
+Question: 68\par
+If i j,k are integer variable with values 1,2,3 respectively, then what is the value of the expression\par
+\par
+\par
+\par
+6\par
+\par
+\par
+5\par
+\par
+\par
+1\par
+\par
+\par
+0\par
+\par
+Question: 69\par
+The expression a << 6 shifts all bits of a six places to the left. If a Ox6db7, then what is the value of a << 6\par
+\par
+\par
+\par
+0xa72b\par
+\par
+\par
+0xa2b\par
+\par
+\par
+0x6dc0\par
+\par
+\par
+0x1111\par
+\par
+Question: 70\par
+Choose the correct statements\par
+\par
+\par
+\par
+address operator cannot be applied to register variables\par
+\par
+\par
+misuse of register declaration will increase the execution time\par
+\par
+\par
+Both (a) & (b)\par
+\par
+\par
+none of above\par
+\par
+Question: 71\par
+Choose the correct statement for the given code:\par
+int **a;\par
+\par
+\par
+\par
+is illegal\par
+\par
+\par
+is legal but meaningless\par
+\par
+\par
+is syntactically and semantically correct\par
+\par
+\par
+none of these\par
+\par
+Question: 72\par
+Determine Output:\par
+void main() \{\par
+int i = 0, j = 1, k = 2, m;\par
+m = i++ || j++ || k++;\par
+printf(\ldblquote %d %d %d %d\rdblquote , m, i, j, k);\par
+\}\par
+\par
+\par
+\par
+1 1 2 3\par
+\par
+\par
+1 1 2 2\par
+\par
+\par
+0 1 2 2\par
+\par
+\par
+0 1 2 3\par
+\par
+Question: 73\par
+Determine Output :\par
+void main() \{\par
+int c = - -2;\par
+printf(\ldblquote c = %d\rdblquote , c);\par
+\}\par
+\par
+\par
+\par
+1\par
+\par
+\par
+-2\par
+\par
+\par
+2\par
+\par
+\par
+Error\par
+\par
+Question: 74\par
+Determine Output:\par
+void main() \{\par
+int i = 10;\par
+i = !i>14;\par
+printf(\ldblquote i = %d\rdblquote , i);\par
+\}\par
+\par
+\par
+\par
+10\par
+\par
+\par
+14\par
+\par
+\par
+0\par
+\par
+\par
+None of these\par
+\par
+Question: 75\par
+What is the output of the following statements?\par
+int b = 15, c = 5, d = 8, e = 8, a;\par
+a = b>c ? 12 : d>e ? 13 : 14 :15;\par
+printf(\ldblquote %d\rdblquote , a);\par
+\par
+\par
+\par
+13\par
+\par
+\par
+14\par
+\par
+\par
+15\par
+\par
+\par
+12\par
+\par
+\par
+Garbage Value\par
+\par
+Question: 76\par
+What is the use of size() operator?\par
+\par
+\par
+\par
+To get the size of data types or variables in bytes\par
+\par
+\par
+To get size of data types only\par
+\par
+\par
+To get size of the variables only\par
+\par
+\par
+All of the above\par
+\par
+Question: 77\par
+What is the use of typedef keyword?\par
+\par
+\par
+\par
+To create user defined data type\par
+\par
+\par
+To create special functions\par
+\par
+\par
+To change the meaning of built in datatypes\par
+\par
+\par
+None of the above\par
+\par
+Question: 78\par
+Which of the following is a valid expression in C?\par
+\par
+\par
+\par
+int basic_pay = 23000;\par
+\par
+\par
+int basic_pay = 23,000;\par
+\par
+\par
+int basic pay = 23000;\par
+\par
+\par
+int $basic_pay = 23000;\par
+\par
+Question: 79\par
+Which of the following arithmetic operator takes only integer operands?\par
+\par
+\par
+\par
++\par
+\par
+\par
+-\par
+\par
+\par
+/\par
+\par
+\par
+%\par
+\par
+Question: 80\par
+Which of the following operator has the lowest priority?\par
+\par
+\par
+\par
+&&\par
+\par
+\par
++\par
+\par
+\par
+*\par
+\par
+\par
+!==\par
+\par
+Question: 81\par
+Which among the following operator has the highest priority?\par
+\par
+\par
+\par
+Comma operator\par
+\par
+\par
+Conditional operator\par
+\par
+\par
+Relational operator\par
+\par
+\par
+Unary plus operator\par
+\par
+Question: 82\par
+Which of the following statement is true?\par
+\par
+\par
+\par
+All arithmetic operators have the same level of precedence.\par
+\par
+\par
+The modulus operator % can be used only with integers.\par
+\par
+\par
+A unary expression consists of only one operand with no operators.\par
+\par
+\par
+The operators <=, >=, and != all enjoy the same level of priority.\par
+\par
+Question: 83\par
+What will be the output for the following C code?\par
+\par
+int main()\par
+\{\par
+int n = 8;\par
+n = n / 3;\par
+printf(\ldblquote %d\rdblquote , n);\par
+return 0;\par
+\}\par
+\par
+\par
+\par
+2\par
+\par
+\par
+1\par
+\par
+\par
+3\par
+\par
+\par
+Compile-time error\par
+\par
+Question: 84\par
+What is the correct order of precedence of arithmetic operators from highest to lowest?\par
+\par
+\par
+\par
+%, *, /, +, \endash\par
+\par
+\par
+-, +, *, /, %\par
+\par
+\par
+%, +, -, *, /\par
+\par
+\par
++, \endash  , %, *, /\par
+\par
+Question: 85\par
+What will be the output for the following C code?\par
+void main()\par
+\{\par
+int y = 4;\par
+int x = 9 % 2 * 4 / 2;\par
+printf(\ldblquote Value of x is %d\rdblquote , x);\par
+\}\par
+\par
+\par
+\par
+Value of x is 3\par
+\par
+\par
+Value of x is 2\par
+\par
+\par
+Value of x is 1\par
+\par
+\par
+Compile-time error\par
+\par
+Question: 86\par
+Which of the following is not an arithmetic operation?\par
+\par
+\par
+\par
+a*=5;\par
+\par
+\par
+a/=5;\par
+\par
+\par
+a!=5\par
+\par
+\par
+a%=5;\par
+\par
+Question: 87\par
+What will be the output for the following C code?#include\par
+int main()\par
+\{\par
+int a = 8;\par
+double b = 2.6;\par
+int c;\par
+c = a + b;\par
+printf(\ldblquote %d\rdblquote , c);\par
+return 0;\par
+\}\par
+\par
+\par
+\par
+10.6\par
+\par
+\par
+10\par
+\par
+\par
+11\par
+\par
+\par
+16\par
+\par
+Question: 88\par
+What is the result of a logical or relational expression in C?\par
+\par
+\par
+\par
+0 or 1\par
+\par
+\par
+True or false\par
+\par
+\par
+0 if false and a positive number if true.\par
+\par
+\par
+T and F\par
+\par
+Question: 89\par
+What will be the output for the following C code?\par
+int main()\par
+\{\par
+int x = 5, y = 2;\par
+x *= x - y;\par
+printf(\ldblquote %d\rdblquote , x);\par
+return 0;\par
+\}\par
+\par
+\par
+\par
+23\par
+\par
+\par
+15\par
+\par
+\par
+Undefined behavior\par
+\par
+\par
+21\par
+\par
+Question: 90\par
+What will be the output for the following C code?#include\par
+int main()\par
+\{\par
+int x = 4, y = 2;\par
+x /= x / y;\par
+printf(\ldblquote %d\\n\rdblquote , x);\par
+return 0;\par
+\}\par
+\par
+\par
+\par
+4\par
+\par
+\par
+2\par
+\par
+\par
+1\par
+\par
+\par
+Undefined behavior\par
+\par
+Question: 91\par
+What will be the output for the following C code?\par
+\par
+void main()\par
+\{\par
+int x = 0;\par
+if (x = 0)\par
+printf(\ldblquote Yes\rdblquote );\par
+else\par
+printf(\ldblquote No\rdblquote );\par
+\}\par
+\par
+\par
+\par
+Compile-time error\par
+\par
+\par
+Yes\par
+\par
+\par
+No\par
+\par
+\par
+Nothing\par
+\par
+Question: 92\par
+What is the use of sizeof() operator?\par
+\par
+\par
+\par
+To get the size of data types or variables in bytes\par
+\par
+\par
+To get the size of variables only\par
+\par
+\par
+To get the size of the structure only\par
+\par
+\par
+None of the above\par
+\par
+Question: 93\par
+What is the operator \lquote :?\rquote  called?\par
+\par
+\par
+\par
+If-Else operator\par
+\par
+\par
+Ternary operator\par
+\par
+\par
+Logical operator\par
+\par
+\par
+Comparison operator\par
+\par
+Question: 94\par
+Which of the following are true regardless of the implementation?\par
+\par
+\par
+\par
+sizeof(int) is not less than sizeof(long)\par
+\par
+\par
+sizeof(int) equals sizeof(unsigned)\par
+\par
+\par
+sizeof(double) is not less than sizeof(float)\par
+\par
+\par
+Both B and C\par
+\par
+Question: 95\par
+If y is of integer type then the expressions3 * ( y -8 ) / 9and(y - 8) /9 * 3\par
+\par
+\par
+\par
+must yield the same value\par
+\par
+\par
+must yield different values\par
+\par
+\par
+may or may not yield the same value\par
+\par
+\par
+none of the above\par
+\par
+Question: 96\par
+Integer division results in\par
+\par
+\par
+\par
+truncation\par
+\par
+\par
+rounding\par
+\par
+\par
+overflow\par
+\par
+\par
+none of the above\par
+\par
+Question: 97\par
+In an expression involving ||operator, evaluation\par
+\par
+\par
+\par
+will be stopped if one of its components evaluates to false\par
+\par
+\par
+will be stopped if one of its components evaluates to true\par
+\par
+\par
+takes place from left to right\par
+\par
+\par
+Both B and C\par
+\par
+Question: 98\par
+Implicit type conversion takes place\par
+\par
+\par
+\par
+across an assignment operator.\par
+\par
+\par
+if an operator has operands of different data types.\par
+\par
+\par
+Both A and B\par
+\par
+\par
+None of the above.\par
+\par
+Question: 99\par
+Choose the correct statements\par
+\par
+\par
+\par
+Casting refers to implicit type conversion\par
+\par
+\par
+Coercion refers to implicit type conversion\par
+\par
+\par
+Casting refers to explicit type conversion\par
+\par
+\par
+Both B and C\par
+\par
+Question: 100\par
+Pick the operators that associate from the left\par
+\par
+\par
+\par
++\par
+\par
+\par
+,\par
+\par
+\par
+==\par
+\par
+\par
+All of the above\par
+\par
+Question: 101\par
+Pick the operators that associate from the right\par
+\par
+\par
+\par
+?:\par
+\par
+\par
++=\par
+\par
+\par
+=\par
+\par
+\par
+All of above\par
+\par
+Question: 102\par
+Pick the operators whose meaning is context-dependent.\par
+\par
+\par
+\par
+*\par
+\par
+\par
+#\par
+\par
+\par
+&\par
+\par
+\par
+All of above\par
+\par
+Question: 103\par
+What is the correct result of this operation:-\par
+x -= y + 1;\par
+\par
+\par
+\par
+x = x \endash  y + 1\par
+\par
+\par
+x = -x \endash  y \endash  1\par
+\par
+\par
+x = -x + y + 1\par
+\par
+\par
+x = x \endash  y \endash  1\par
+\par
+Question: 104\par
+Which of the following comments about the ++ operator are correct?\par
+\par
+\par
+\par
+It is a unary operator\par
+\par
+\par
+It is a unary operator\par
+\par
+\par
+It cannot be applied to an expression\par
+\par
+\par
+All of above\par
+\par
+Question: 105\par
+The expression 4 + 6 / 3 * 2 - 2 + 7 % 3evaluates to\par
+\par
+\par
+\par
+3\par
+\par
+\par
+4\par
+\par
+\par
+6\par
+\par
+\par
+7\par
+\par
+Question: 106\par
+If a=5 and b=2 then printf(\ldblquote %d\rdblquote , a+++b); will?\par
+\par
+\par
+\par
+results in a syntax error\par
+\par
+\par
+print 8\par
+\par
+\par
+print 10\par
+\par
+\par
+None of the above\par
+\par
+Question: 107\par
+The statement printf(\ldblquote %d\rdblquote , (a++)); will print\par
+\par
+\par
+\par
+the current value of a\par
+\par
+\par
+the value of a + 1\par
+\par
+\par
+an error message\par
+\par
+\par
+garbage\par
+\par
+Question: 108\par
+The statement printf(\ldblquote %d\rdblquote , ++5); will print\par
+\par
+\par
+\par
+5\par
+\par
+\par
+6\par
+\par
+\par
+an error message\par
+\par
+\par
+garbage\par
+\par
+Question: 109\par
+The statement printf(\ldblquote %d\rdblquote , sizeof(\ldblquote\rdblquote )); will print\par
+\par
+\par
+\par
+0\par
+\par
+\par
+1\par
+\par
+\par
+an error message\par
+\par
+\par
+garbage value\par
+\par
+Question: 110\par
+The ascending order of precedence of the bit-wise operators &, ^, and | is\par
+\par
+\par
+\par
+& ^ |\par
+\par
+\par
+^ & |\par
+\par
+\par
+| ^ &\par
+\par
+\par
+& | ^\par
+\par
+Question: 111\par
+What is the modulo operator in C used for?\par
+\par
+\par
+\par
+Division\par
+\par
+\par
+Multiplication\par
+\par
+\par
+Remainder after division\par
+\par
+\par
+Exponentiation\par
+\par
+Question: 112\par
+Which operator is used to access the value stored at a pointer in C?\par
+\par
+\par
+\par
+&\par
+\par
+\par
+*\par
+\par
+\par
+%\par
+\par
+\par
+!\par
+\par
+Question: 113\par
+What is the result of the expression 2 + 3 * 4?\par
+\par
+\par
+\par
+10\par
+\par
+\par
+14\par
+\par
+\par
+20\par
+\par
+\par
+9\par
+\par
+Question: 114\par
+Which operator in C is used for bitwise AND?\par
+\par
+\par
+\par
+&&\par
+\par
+\par
+&\par
+\par
+\par
+||\par
+\par
+\par
+|\par
+\par
+Question: 115\par
+The expression (a == b) returns _ in C.\par
+\par
+\par
+\par
+True if a is equal to b\par
+\par
+\par
+False if a is equal to b\par
+\par
+\par
+True if a is not equal to b\par
+\par
+\par
+True if a is not equal to b\par
+\par
+Question: 116\par
+What is the result of the expression 5 / 2 in C?\par
+\par
+\par
+\par
+2\par
+\par
+\par
+2.5\par
+\par
+\par
+3\par
+\par
+\par
+2.0\par
+\par
+Question: 117\par
+The expression (a > b) returns _ in C.\par
+\par
+\par
+\par
+True if a is greater than b\par
+\par
+\par
+False if a is greater than b\par
+\par
+\par
+True if a is less than b\par
+\par
+\par
+False if a is less than b\par
+\par
+Question: 118\par
+Which operator is used for pre-increment in C?\par
+\par
+\par
+\par
+++\par
+\par
+\par
+\endash\par
+\par
+\par
++=\par
+\par
+\par
+-=\par
+\par
+Question: 119\par
+What is the result of the expression 7 % 3 in C?\par
+\par
+\par
+\par
+2\par
+\par
+\par
+3\par
+\par
+\par
+1\par
+\par
+\par
+0\par
+\par
+Question: 120\par
+The expression (a && b) returns _ in C.\par
+\par
+\par
+\par
+True if both a and b are true\par
+\par
+\par
+True if either a or b is true\par
+\par
+\par
+False if both a and b are false\par
+\par
+\par
+False if either a or b is false\par
+\par
+Question: 121\par
+What is the result of the expression (2 + 3) * 4?\par
+\par
+\par
+\par
+20\par
+\par
+\par
+14\par
+\par
+\par
+25\par
+\par
+\par
+10\par
+\par
+Question: 122\par
+Which operator is used for bitwise OR in C?\par
+\par
+\par
+\par
+||\par
+\par
+\par
+|\par
+\par
+\par
+&&\par
+\par
+\par
+&\par
+\par
+Question: 123\par
+The expression (a != b) returns _ in C.\par
+\par
+\par
+\par
+True if a is equal to b\par
+\par
+\par
+False if a is equal to b\par
+\par
+\par
+True if a is not equal to b\par
+\par
+\par
+False if a is not equal to b\par
+\par
+Question: 124\par
+What is the result of the expression 5 / 2.0 in C?\par
+\par
+\par
+\par
+2\par
+\par
+\par
+2.5\par
+\par
+\par
+3\par
+\par
+\par
+2.0\par
+\par
+Question: 125\par
+Which operator is used for pre-decrement in C?\par
+\par
+\par
+\par
+++\par
+\par
+\par
+\endash\par
+\par
+\par
++=\par
+\par
+\par
+-=\par
+\par
+Question: 126\par
+The expression (a || b) returns _ in C.\par
+\par
+\par
+\par
+True if both a and b are true\par
+\par
+\par
+True if either a or b is true\par
+\par
+\par
+False if both a and b are false\par
+\par
+\par
+False if either a or b is false\par
+\par
+Question: 127\par
+What is the result of the expression 4 % 2 in C?\par
+\par
+\par
+\par
+0\par
+\par
+\par
+1\par
+\par
+\par
+2\par
+\par
+\par
+4\par
+\par
+Question: 128\par
+Which operator is used for post-increment in C?\par
+\par
+\par
+\par
+++\par
+\par
+\par
+\endash\par
+\par
+\par
++=\par
+\par
+\par
+-=\par
+\par
+Question: 129\par
+The expression (a > b || b < c) returns _ in C.\par
+\par
+\par
+\par
+True if either a is greater than b or b is less than c\par
+\par
+\par
+True if both a is greater than b and b is less than c\par
+\par
+\par
+False if both a is greater than b and b is less than c\par
+\par
+\par
+False if either a is greater than b or b is less than c\par
+\par
+Question: 130\par
+What is the result of the expression 3 / 5 in C?\par
+\par
+\par
+\par
+0\par
+\par
+\par
+0.6\par
+\par
+\par
+1\par
+\par
+\par
+0.5\par
+\par
+Question: 131\par
+Which operator is used for post-decrement in C?\par
+\par
+\par
+\par
+++\par
+\par
+\par
+\endash\par
+\par
+\par
++=\par
+\par
+\par
+-=\par
+\par
+Question: 132\par
+The expression (a >= b) returns _ in C.\par
+\par
+\par
+\par
+True if a is greater than or equal to b\par
+\par
+\par
+False if a is greater than or equal to b\par
+\par
+\par
+True if a is less than or equal to b\par
+\par
+\par
+False if a is less than or equal to b\par
+\par
+Question: 133\par
+What is the result of the expression 5 / 2 + 3 in C?\par
+\par
+\par
+\par
+2\par
+\par
+\par
+5\par
+\par
+\par
+4\par
+\par
+\par
+5.5\par
+\par
+Question: 134\par
+Which operator is used for logical NOT in C?\par
+\par
+\par
+\par
+&&\par
+\par
+\par
+||\par
+\par
+\par
+&\par
+\par
+\par
+!\par
+\par
+Question: 135\par
+The expression (a < b && b > c) returns _ in C.\par
+\par
+\par
+\par
+1\par
+\par
+\par
+1.33\par
+\par
+\par
+1.0\par
+\par
+\par
+1.333333\par
+\par
+Question: 136\par
+Which operator is used for bitwise XOR in C?\par
+\par
+\par
+\par
+&&\par
+\par
+\par
+||\par
+\par
+\par
+^\par
+\par
+\par
+!\par
+\par
+Question: 137\par
+The expression (a <= b) returns _ in C.\par
+\par
+\par
+\par
+True if a is less than or equal to b\par
+\par
+\par
+False if a is less than or equal to b\par
+\par
+\par
+True if a is greater than or equal to b\par
+\par
+\par
+False if a is greater than or equal to b\par
+\par
+Question: 138\par
+What is the result of the expression 5 % 3 in C?\par
+\par
+\par
+\par
+0\par
+\par
+\par
+1\par
+\par
+\par
+2\par
+\par
+\par
+3\par
+\par
+Question: 139\par
+Which operator is used for bitwise NOT in C?\par
+\par
+\par
+\par
+&&\par
+\par
+\par
+||\par
+\par
+\par
+!\par
+\par
+\par
+~\par
+\par
+Question: 140\par
+what will be the output when following code is executed?\par
+void main()\par
+\{\par
+int i = 3;\par
+int j;\par
+j = sizeof(++i + ++i);\par
+printf(\ldblquote i=%d j=%d\rdblquote , i, j);\par
+\}\par
+\par
+\par
+\par
+i=4 j=2\par
+\par
+\par
+i=3 j=2\par
+\par
+\par
+i=5 j=2\par
+\par
+\par
+the behavior is undefined\par
+\par
+Question: 141\par
+what will be the output when following code is executed?\par
+\par
+void main()\par
+\{\par
+int a, b, c, d;\par
+a = 3;\par
+b = 5;\par
+c = a, b;\par
+d = (a, b);\par
+printf(\ldblquote c=%d d=%d\rdblquote , c, d);\par
+\}\par
+\par
+\par
+\par
+c=3 d=3\par
+\par
+\par
+c=3 d=5\par
+\par
+\par
+c=5 d=3\par
+\par
+\par
+c=5 d=5\par
+\par
+Question: 142\par
+what will be the output when following code is executed?\par
+\par
+void main()\par
+\{\par
+int c = - -2;\par
+printf(\ldblquote c=%d\rdblquote , c);\par
+\}\par
+\par
+\par
+\par
+1\par
+\par
+\par
+-2\par
+\par
+\par
+2\par
+\par
+\par
+Error\par
+\par
+Question: 143\par
+what will be the output when following code is executed?\par
+\par
+include\par
+void main()\{\par
+int a=10, b=20;\par
+char x=1, y=0;\par
+if(a,b,x,y)\{\par
+printf(\ldblquote EXAM\rdblquote );\par
+\}\par
+\}\par
+\par
+\par
+\par
+XAM is printed\par
+\par
+\par
+EXAM is printed\par
+\par
+\par
+Compiler Error\par
+\par
+\par
+Nothing is printed\par
+\par
+Question: 144\par
+what will be the output when following code is executed?\par
+int z, x=5, y= -10, a=4, b=2;\par
+z = x++ - \endash y*b/a;\par
+\par
+\par
+\par
+5\par
+\par
+\par
+6\par
+\par
+\par
+9\par
+\par
+\par
+10\par
+\par
+\par
+11\par
+\par
+Question: 145\par
+what will be the output when following code is executed?\par
+\par
+void main()\par
+\{\par
+int a, b=7;\par
+a = b<4 ? b<<1 : ++b>4 ? 7>>1 : a;\par
+printf(\ldblquote %d %d\rdblquote , a, b);\par
+\}\par
+\par
+\par
+\par
+3 7\par
+\par
+\par
+7 3\par
+\par
+\par
+8 3\par
+\par
+\par
+3 8\par
+\par
+\par
+None of these\par
+\par
+Question: 146\par
+what will be the output when following code is executed?\par
+\par
+void main()\par
+\{\par
+int a=10, b;\par
+b = a++ + ++a;\par
+printf(\ldblquote %d %d %d %d\rdblquote , b, a++, a, ++a);\par
+\}\par
+\par
+\par
+\par
+12 10 11 13\par
+\par
+\par
+22 12 12 13\par
+\par
+\par
+22 13 13 13\par
+\par
+\par
+22 13 14 14\par
+\par
+Question: 147\par
+Given b=110 and c=20, what is the value of \lquote a\rquote  after execution of the expression a=b-=c*=5?\par
+\par
+\par
+\par
+450\par
+\par
+\par
+10\par
+\par
+\par
+110\par
+\par
+\par
+-10\par
+\par
+\par
+-110\par
+\par
+Question: 148\par
+what will be the output when following code is executed?\par
+\par
+void main()\par
+\{\par
+int w=10, x=5, y=3, z=3;\par
+if( (w < x ) && (y=z++) )\par
+printf(\ldblquote %d %d %d %d\rdblquote , w, x, y, z);\par
+else\par
+printf(\ldblquote %d %d %d %d\rdblquote , w, x, y, z);\par
+\}\par
+\par
+\par
+\par
+10 5 4 4\par
+\par
+\par
+10 5 3 3\par
+\par
+\par
+10 5 4 3\par
+\par
+\par
+10 5 3 4\par
+\par
+\par
+10 5 5 5\par
+\par
+Question: 149\par
+what will be the output when following code is executed?\par
+\par
+void main()\par
+\{\par
+int y=10;\par
+if(y++>9 && y++!=10 && y++>11)\par
+printf(\ldblquote %d\rdblquote , y);\par
+else\par
+printf(\ldblquote %d\rdblquote , y);\par
+\}\par
+\par
+\par
+\par
+11\par
+\par
+\par
+12\par
+\par
+\par
+13\par
+\par
+\par
+14\par
+\par
+\par
+Compilation error\par
+\par
+Question: 150\par
+what will be the output when following code is executed?\par
+\par
+void main()\par
+\{\par
+int a=10, b=11, c=13, d;\par
+d = (a=c, b+=a, c=a+b+c);\par
+printf(\ldblquote %d %d %d %d\rdblquote , d, a, b, c);\par
+\}\par
+\par
+\par
+\par
+50, 13, 11, 13\par
+\par
+\par
+50, 13, 24, 50\par
+\par
+\par
+13, 10, 24, 50\par
+\par
+\par
+50, 13, 24, 13\par
+\par
+\par
+13, 13, 24, 13\par
+\par
+Question: 151\par
+What will be the output for the following C code?\par
+\par
+#include\par
+int main()\par
+\{\par
+int x = 5, y = 2;\par
+x *= x - y;\par
+printf(\ldblquote %d\rdblquote , x);\par
+return 0;\par
+\}\par
+\par
+\par
+\par
+23\par
+\par
+\par
+15\par
+\par
+\par
+Undefined behavior\par
+\par
+\par
+21\par
+\par
+Question: 152\par
+What will be the output for the following C code?\par
+\par
+void main() \{\par
+int i = 10;\par
+i = !i>14;\par
+printf(\ldblquote i = %d\rdblquote , i);\par
+\}\par
+\par
+\par
+\par
+i=0\par
+\par
+\par
+i=1\par
+\par
+\par
+compiletime error\par
+\par
+\par
+runtime error\par
+\par
+Question: 153\par
+The statement printf(\ldblquote %d\rdblquote , (a++)); will print\par
+\par
+\par
+\par
+the current value of a\par
+\par
+\par
+the value of a + 1\par
+\par
+\par
+an error message\par
+\par
+\par
+garbage\par
+\par
+Question: 154\par
+What will be the output for the following C code?\par
+\par
+int main()\par
+\{\par
+int X=1, Y;\par
+Y = (X==1? 2:0);\par
+printf(\ldblquote X value is: %d\\n\rdblquote , X);\par
+printf(\ldblquote Y value is: %d\\n\rdblquote , Y);\par
+\par
+return 0;\par
+\}\par
+\par
+\par
+\par
+X value is: 1\par
+Y value is: 2\par
+\par
+\par
+X value is: 2\par
+Y value is: 1\par
+\par
+\par
+X value is: 1\par
+Y value is: 0\par
+\par
+\par
+compiletime error\par
+\par
+Question: 155\par
+What will be the output for the following C code?\par
+\par
+int x = 7;\par
+int y = 3;\par
+int result = x / y + y / x;\par
+\par
+\par
+\par
+0\par
+\par
+\par
+2\par
+\par
+\par
+1\par
+\par
+\par
+Compiler error\par
+\par
+Question: 156\par
+What will be the output for the following C code?\par
+\par
+int x = 10;\par
+int y = 12;\par
+int result = x != y;\par
+\par
+\par
+\par
+0\par
+\par
+\par
+2\par
+\par
+\par
+1\par
+\par
+\par
+Compiler error\par
+\par
+Question: 157\par
+What is the result of the following expression: (5 >= 3) && (2 != 4)?\par
+\par
+\par
+\par
+0\par
+\par
+\par
+1\par
+\par
+\par
+true\par
+\par
+\par
+false\par
+\par
+Question: 158\par
+What will be the output for the following C code?\par
+\par
+int main()\par
+\{\par
+    int y = 10000;\par
+    int y = 34;\par
+    printf("Hello World! %d\\n", y);\par
+    return 0;\par
+\}\par
+\par
+\par
+Compile time error\par
+\par
+\par
+Hello World! 34\par
+\par
+\par
+Hello World! 1000\par
+\par
+\par
+Hello World! followed by a junk value\par
+\par
+Question: 159\par
+What will be the output for the following C code?\par
+\par
+void main()\par
+\{\par
+    int x = 5 * 9 / 3 + 9;\par
+\}\par
+\par
+\par
+3.75\par
+\par
+\par
+Depends on compiler\par
+\par
+\par
+24\par
+\par
+\par
+3\par
+\par
+Question: 160\par
+What will be the output for the following C code?\par
+\par
+int main()\par
+\{\par
+    short int i = 20;\par
+    char c = 97;\par
+    printf("%d, %d, %d\\n", sizeof(i), sizeof(c), sizeof(c + i));\par
+    return 0;\par
+\}\par
+\par
+\par
+2, 1, 2\par
+\par
+\par
+2, 1, 1\par
+\par
+\par
+2, 1, 4\par
+\par
+\par
+2, 2, 8\par
+\par
+Question: 161\par
+What will be the output for the following C code?\par
+\par
+void main()\par
+\{\par
+    int x = 1, y = 0, z = 5;\par
+    int a = x && y && z++;\par
+    printf("%d", z);\par
+\}\par
+\par
+\par
+6\par
+\par
+\par
+5\par
+\par
+\par
+0\par
+\par
+\par
+Varies\par
+\par
+Question: 162\par
+What will be the output for the following C code?\par
+\par
+void main()\par
+\{\par
+    int x = 1, z = 3;\par
+    int y = x << 3;\par
+    printf(" %d\\n", y);\par
+\}\par
+\par
+\par
+-2147483648\par
+\par
+\par
+-1\par
+\par
+\par
+Run time error\par
+\par
+\par
+8\par
+\par
+Question: 163\par
+What will be the output for the following C code?\par
+\par
+void main()\par
+\{\par
+    int x = 0, y = 2, z = 3;\par
+    int a = x & y | z;\par
+    printf("%d", a);\par
+\}\par
+\par
+\par
+3\par
+\par
+\par
+0\par
+\par
+\par
+2\par
+\par
+\par
+Run time error\par
+\par
+Question: 164\par
+What will be the output for the following C code?\par
+\par
+int main()\par
+\{\par
+    int a = 10, b = 5, c = 3;\par
+    b != !a;\par
+    c = !!a;\par
+    printf("%d\\t%d", b, c);\par
+\}\par
+\par
+\par
+5 1\par
+\par
+\par
+0 3\par
+\par
+\par
+5 3\par
+\par
+\par
+1 1\par
+\par
+Question: 165\par
+What will be the output for the following C code?\par
+\par
+void main()\par
+\{\par
+    int a = 5;\par
+    int b = ++a + a++ + --a;\par
+    printf("Value of b is %d", b);\par
+\}\par
+\}\par
+\par
+\par
+\par
+Value of x is 19\par
+\par
+\par
+Value of x is 21\par
+\par
+\par
+Value of x is 15\par
+\par
+\par
+Undefined behaviour\par
+\par
+Question: 166\par
+What will be the output for the following C code?\par
+\par
+void main()\par
+\{\par
+    int k = 8;\par
+    int x = 0 == 1 && k++;\par
+    printf("%d%d\\n", x, k);\par
+\}\par
+\par
+\par
+0 9\par
+\par
+\par
+0 8\par
+\par
+\par
+1 9\par
+\par
+\par
+1 8\par
+\par
+Question: 167\par
+What will be the output for the following C code?\par
+\par
+void main()\par
+\{\par
+char a = \lquote a\rquote ;\par
+int x = (a % 10)++;\par
+printf(\ldblquote %d\\n\rdblquote , x);\par
+\}\par
+\par
+\par
+\par
+6\par
+\par
+\par
+Junk value\par
+\par
+\par
+Compile time error\par
+\par
+\par
+7\par
+\par
+Question: 168\par
+What will be the output for the following C code?\par
+\par
+int main()\par
+\{\par
+int c = 2 ^ 3;\par
+printf(\ldblquote %d\\n\rdblquote , c);\par
+\}\par
+\par
+\par
+\par
+1\par
+\par
+\par
+8\par
+\par
+\par
+9\par
+\par
+\par
+0\par
+\par
+Question: 169\par
+What will be the output for the following C code?\par
+\par
+void main()\par
+\{\par
+int x = 97;\par
+int y = sizeof(x++);\par
+printf(\ldblquote x is %d\rdblquote , x);\par
+\}\par
+\par
+\par
+\par
+x is 97\par
+\par
+\par
+x is 98\par
+\par
+\par
+x is 99\par
+\par
+\par
+Run time error\par
+\par
+Question: 170\par
+What will be the output for the following C code?\par
+\par
+void main()\par
+\{\par
+int a = 5, b = -7, c = 0, d;\par
+d = ++a && ++b || ++c;\par
+printf(\ldblquote\\n%d%d%d%d\rdblquote , a, b, c, d);\par
+\}\par
+\par
+\par
+\par
+6 -6 0 0\par
+\par
+\par
+6 -5 0 1\par
+\par
+\par
+-6 -6 0 1\par
+\par
+\par
+6 -6 0 1\par
+\par
+Question: 171\par
+What will be the output for the following C code?\par
+void main()\par
+\{\par
+int a = -5;\par
+int k = (a++, ++a);\par
+printf(\ldblquote %d\\n\rdblquote , k);\par
+\}\par
+\par
+\par
+\par
+-3\par
+\par
+\par
+-5\par
+\par
+\par
+4\par
+\par
+\par
+Undefined\par
+\f0\par
+}
+ 

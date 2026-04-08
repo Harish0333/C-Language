@@ -1,0 +1,1544 @@
+{\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Calibri;}}
+{\*\generator Riched20 10.0.22621}\viewkind4\uc1 
+\pard\sa200\sl276\slmult1\f0\fs22\lang9 Question: 1\par
+What is a function in C?\par
+\par
+\par
+\par
+A variable\par
+\par
+\par
+A block of code that performs a specific task\par
+\par
+\par
+A reserved keyword\par
+\par
+\par
+A data type\par
+\par
+Question: 2\par
+How do you declare a function in C?\par
+\par
+\par
+\par
+func myFunction()\par
+\par
+\par
+int myFunction;\par
+\par
+\par
+void myFunction();\par
+\par
+\par
+myFunction(int);\par
+\par
+Question: 3\par
+What is the return type of a function that doesn\rquote t return any value?\par
+\par
+\par
+\par
+void\par
+\par
+\par
+int\par
+\par
+\par
+float\par
+\par
+\par
+char\par
+\par
+Question: 4\par
+What is the purpose of the \ldblquote return\rdblquote  statement in a function?\par
+\par
+\par
+\par
+To end the program\par
+\par
+\par
+To execute the function\par
+\par
+\par
+To specify the function\rquote s name\par
+\par
+\par
+To return a value from the function\par
+\par
+Question: 5\par
+How do you define a function outside of the main function in C?\par
+\par
+\par
+\par
+function myFunction() \{ \}\par
+\par
+\par
+myFunction() \{ \}\par
+\par
+\par
+int myFunction() \{ \}\par
+\par
+\par
+void myFunction() \{ \}\par
+\par
+Question: 6\par
+What is the scope of a local variable within a function?\par
+\par
+\par
+\par
+Global to the program\par
+\par
+\par
+Limited to the function where it is declared\par
+\par
+\par
+Accessible from any function within the same file\par
+\par
+\par
+Accessible from any function in the program\par
+\par
+Question: 7\par
+How do you pass arguments to a function in C?\par
+\par
+\par
+\par
+By using the \ldblquote &\rdblquote  operator\par
+\par
+\par
+By specifying the arguments in the function call\par
+\par
+\par
+By assigning the arguments to a pointer\par
+\par
+\par
+By declaring the arguments as global variables\par
+\par
+Question: 8\par
+What is a recursive function in C?\par
+\par
+\par
+\par
+A function that calls another function\par
+\par
+\par
+A function that uses a loop\par
+\par
+\par
+A function that calls itself\par
+\par
+\par
+A function that returns a value\par
+\par
+Question: 9\par
+What is the \ldblquote void\rdblquote  keyword used for in the function definition?\par
+\par
+\par
+\par
+To specify that the function does not return any value\par
+\par
+\par
+To specify that the function can take any number of arguments\par
+\par
+\par
+To declare a variable inside the function\par
+\par
+\par
+To indicate the function\rquote s name\par
+\par
+Question: 10\par
+What is a function prototype in C used for?\par
+\par
+\par
+\par
+To define a function within another function\par
+\par
+\par
+To declare the function\rquote s return type\par
+\par
+\par
+To specify the function\rquote s name\par
+\par
+\par
+To provide a forward declaration of the function to the compiler\par
+\par
+Question: 11\par
+How do you define a function that takes two integers as arguments and returns their sum?\par
+\par
+\par
+\par
+int sum(int x, int y) \{ return x + y; \}\par
+\par
+\par
+int sum(x, y) \{ return x + y; \}\par
+\par
+\par
+void sum(int x, int y) \{ return x + y; \}\par
+\par
+\par
+int sum(int x, y) \{ return x + y; \}\par
+\par
+Question: 12\par
+What is the output of the following code?\par
+\par
+include\par
+int add(int x, int y) \{\par
+return x + y;\par
+\}\par
+\par
+int main() \{\par
+int result = add(5, 3);\par
+printf(\ldblquote %d\rdblquote , result);\par
+return 0;\par
+\}\par
+\par
+\par
+\par
+8\par
+\par
+\par
+5\par
+\par
+\par
+3\par
+\par
+\par
+Garbage value\par
+\par
+Question: 13\par
+What is the keyword used to pass the address of a variable to a function?\par
+\par
+\par
+\par
+pass\par
+\par
+\par
+value\par
+\par
+\par
+& (ampersand)\par
+\par
+\par
+addr\par
+\par
+Question: 14\par
+What is the output of the following code?\par
+\par
+include\par
+void swap(int a, int b) \{\par
+int temp = a;\par
+a = b;\par
+b = temp;\par
+\}\par
+\par
+int main() \{\par
+int x = 5, y = 10;\par
+swap(x, y);\par
+printf(\ldblquote x: %d, y: %d\rdblquote , x, y);\par
+return 0;\par
+\}\par
+\par
+\par
+\par
+x: 5, y: 10\par
+\par
+\par
+x: 10, y: 5\par
+\par
+\par
+Compilation Error\par
+\par
+\par
+Undefined behavior\par
+\par
+Question: 15\par
+Which of the following is true about recursive functions?\par
+\par
+\par
+\par
+They always return void.\par
+\par
+\par
+They call themselves directly or indirectly.\par
+\par
+\par
+They cannot be used in C programming.\par
+\par
+\par
+They only work with character data type.\par
+\par
+Question: 16\par
+What is the output of the following code?\par
+\par
+include\par
+int factorial(int n) \{\par
+if (n == 0 || n == 1) \{\par
+return 1;\par
+\} else \{\par
+return n * factorial(n - 1);\par
+\}\par
+\}\par
+\par
+int main() \{\par
+int result = factorial(5);\par
+printf(\ldblquote %d\rdblquote , result);\par
+return 0;\par
+\}\par
+\par
+\par
+\par
+120\par
+\par
+\par
+24\par
+\par
+\par
+720\par
+\par
+\par
+5\par
+\par
+Question: 17\par
+What is the keyword used to access the value of a variable pointed to by a pointer in a function?\par
+\par
+\par
+\par
+value\par
+\par
+\par
+data\par
+\par
+\par
+(asterisk)\par
+\par
+val\par
+\par
+Question: 18\par
+Which type of recursion causes a function to call itself multiple times before returning any value?\par
+\par
+\par
+\par
+Linear recursion\par
+\par
+\par
+Tail recursion\par
+\par
+\par
+Indirect recursion\par
+\par
+\par
+Non-linear recursion\par
+\par
+Question: 19\par
+What is the output of the following code?\par
+\par
+include\par
+void increment(int *x) \{\par
+(*x)++;\par
+\}\par
+\par
+int main() \{\par
+int num = 5;\par
+increment(&num);\par
+printf(\ldblquote %d\rdblquote , num);\par
+return 0;\par
+\}\par
+\par
+\par
+\par
+6\par
+\par
+\par
+5\par
+\par
+\par
+Garbage value\par
+\par
+\par
+Compilation Error\par
+\par
+Question: 20\par
+What is the correct way to declare a function that takes a pointer to an integer as an argument and returns a pointer to an integer?\par
+\par
+\par
+\par
+int* myFunction(int* x);\par
+\par
+\par
+int myFunction(int x);\par
+\par
+\par
+int myFunction(int x);\par
+\par
+\par
+int myFunction(int x);\par
+\par
+Question: 21\par
+What is the scope of a global variable in C?\par
+\par
+\par
+\par
+Limited to the function where it is declared\par
+\par
+\par
+Accessible from any function within the same file\par
+\par
+\par
+Accessible from any function in the program\par
+\par
+\par
+Can only be used in the main function\par
+\par
+Question: 22\par
+What is the output of the following code?\par
+\par
+include\par
+int add(int x, int y) \{\par
+int sum = x + y;\par
+return sum;\par
+\}\par
+\par
+int main() \{\par
+int result = add(5, 3);\par
+printf(\ldblquote %d\rdblquote , add(result, 2));\par
+return 0;\par
+\}\par
+\par
+\par
+\par
+10\par
+\par
+\par
+8\par
+\par
+\par
+7\par
+\par
+\par
+Compilation Error\par
+\par
+Question: 23\par
+What is the use of the \ldblquote static\rdblquote  keyword when declaring a function in C?\par
+\par
+\par
+\par
+To indicate that the function is not accessible outside the file where it is defined\par
+\par
+\par
+To specify that the function can take any number of arguments\par
+\par
+\par
+To specify that the function can take any number of arguments\par
+\par
+\par
+To declare a static variable inside the function\par
+\par
+Question: 24\par
+Which of the following is true about the \ldblquote main\rdblquote  function in C?\par
+\par
+\par
+\par
+It is required in every C program.\par
+\par
+\par
+It can be defined with any return type.\par
+\par
+\par
+It is optional in C programs.\par
+\par
+\par
+It cannot call other functions.\par
+\par
+Question: 25\par
+What is the output of the following code?\par
+\par
+include\par
+int square(int n) \{\par
+return n * n;\par
+\}\par
+\par
+int main() \{\par
+int x = 2, y = 3;\par
+printf(\ldblquote %d\rdblquote , square(x + y));\par
+return 0;\par
+\}\par
+\par
+\par
+\par
+25\par
+\par
+\par
+12\par
+\par
+\par
+36\par
+\par
+\par
+5\par
+\par
+Question: 26\par
+What is the keyword used to define a function that doesn\rquote t return any value?\par
+\par
+\par
+\par
+none\par
+\par
+\par
+null\par
+\par
+\par
+empty\par
+\par
+\par
+void\par
+\par
+Question: 27\par
+What is the output of the following code?\par
+\par
+include\par
+void printNumbers(int n) \{\par
+if (n > 0) \{\par
+printf(\ldblquote %d \ldblquote , n);\par
+printNumbers(n - 1);\par
+\}\par
+\}\par
+\par
+int main() \{\par
+printNumbers(5);\par
+return 0;\par
+\}\par
+\par
+\par
+\par
+1 2 3 4 5\par
+\par
+\par
+5 4 3 2 1\par
+\par
+\par
+5\par
+\par
+\par
+1\par
+\par
+Question: 28\par
+What is the output of the following code?\par
+\par
+include\par
+int add(int x, int y) \{\par
+return x + y;\par
+\}\par
+\par
+int main() \{\par
+int (*func)(int, int) = &add;\par
+int result = func(3, 5);\par
+printf(\ldblquote %d\rdblquote , result);\par
+return 0;\par
+\}\par
+\par
+\par
+\par
+8\par
+\par
+\par
+3\par
+\par
+\par
+5\par
+\par
+\par
+Garbage value\par
+\par
+Question: 29\par
+What is the output of the following code?\par
+\par
+include\par
+void display() \{\par
+printf(\ldblquote Hello, world!\rdblquote );\par
+\}\par
+\par
+int main() \{\par
+void (*func)() = &display;\par
+func();\par
+return 0;\par
+\}\par
+\par
+\par
+\par
+Hello, world!\par
+\par
+\par
+world! Hello,\par
+\par
+\par
+main\par
+\par
+\par
+Compilation Error\par
+\par
+Question: 30\par
+What is the output of the following code?\par
+\par
+include\par
+int sum(int x, int y) \{\par
+return x + y;\par
+\}\par
+\par
+int main() \{\par
+int a = 5, b = 10, c = 15;\par
+printf(\ldblquote %d\rdblquote , sum(a, sum(b, c)));\par
+return 0;\par
+\}\par
+\par
+\par
+\par
+15\par
+\par
+\par
+30\par
+\par
+\par
+20\par
+\par
+\par
+25\par
+\par
+Question: 31\par
+What is the output of the following code?\par
+\par
+include\par
+void change(int *x) \{\par
+*x = 10;\par
+\}\par
+\par
+int main() \{\par
+int num = 5;\par
+change(&num);\par
+printf(\ldblquote %d\rdblquote , num);\par
+return 0;\par
+\}\par
+\par
+\par
+\par
+5\par
+\par
+\par
+10\par
+\par
+\par
+Garbage value\par
+\par
+\par
+Compilation Error\par
+\par
+Question: 32\par
+hat is the output of the following code?\par
+\par
+include\par
+void swap(int *a, int *b) \{\par
+int temp = *a;\par
+*a = *b;\par
+*b = temp;\par
+\}\par
+\par
+int main() \{\par
+int x = 5, y = 10;\par
+swap(&x, &y);\par
+printf(\ldblquote x: %d, y: %d\rdblquote , x, y);\par
+return 0;\par
+\}\par
+\par
+\par
+\par
+x: 5, y: 10\par
+\par
+\par
+Undefined behavior\par
+\par
+\par
+x: 10, y: 5\par
+\par
+\par
+Compilation Error\par
+\par
+Question: 33\par
+What is the output of the following code?\par
+\par
+include\par
+int power(int base, int exponent) \{\par
+if (exponent == 0) \{\par
+return 1;\par
+\} else \{\par
+return base * power(base, exponent - 1);\par
+\}\par
+\}\par
+\par
+int main() \{\par
+int result = power(2, 4);\par
+printf(\ldblquote %d\rdblquote , result);\par
+return 0;\par
+\}\par
+\par
+\par
+\par
+8\par
+\par
+\par
+16\par
+\par
+\par
+62\par
+\par
+\par
+32\par
+\par
+Question: 34\par
+What is the output of the following code?\par
+\par
+include\par
+int multiply(int x, int y) \{\par
+return x * y;\par
+\}\par
+\par
+int main() \{\par
+int result = multiply(3, 5);\par
+printf(\ldblquote %d\rdblquote , multiply(result, 2));\par
+return 0;\par
+\}\par
+\par
+\par
+\par
+30\par
+\par
+\par
+10\par
+\par
+\par
+25\par
+\par
+\par
+Compilation Error\par
+\par
+Question: 35\par
+What is the output of the following code?\par
+\par
+include\par
+int square(int n) \{\par
+return n * n;\par
+\}\par
+\par
+int main() \{\par
+int x = 4, y = 3;\par
+printf(\ldblquote %d\rdblquote , square(x) + square(y));\par
+return 0;\par
+\}\par
+\par
+\par
+\par
+13\par
+\par
+\par
+25\par
+\par
+\par
+10\par
+\par
+\par
+5\par
+\par
+Question: 36\par
+What is the output of the following code?\par
+\par
+include\par
+int sum(int x, int y) \{\par
+return x + y;\par
+\}\par
+\par
+int main() \{\par
+int result = sum(3, 5);\par
+printf(\ldblquote %d\rdblquote , result++);\par
+return 0;\par
+\}\par
+\par
+\par
+\par
+8\par
+\par
+\par
+3\par
+\par
+\par
+4\par
+\par
+\par
+5\par
+\par
+Question: 37\par
+What is the output of the following code?\par
+\par
+include\par
+int add(int x, int y) \{\par
+return x + y;\par
+\}\par
+\par
+int main() \{\par
+int result = add(2,6);\par
+printf(\ldblquote %d\rdblquote , result);\par
+return 0;\par
+\}\par
+\par
+\par
+\par
+8\par
+\par
+\par
+6\par
+\par
+\par
+2\par
+\par
+\par
+Garbage value\par
+\par
+Question: 38\par
+What is the output of the following code?\par
+\par
+include\par
+int multiply(int x, int y) \{\par
+return x * y;\par
+\}\par
+\par
+int main() \{\par
+int result = multiply(3, 5);\par
+printf(\ldblquote %d\rdblquote , result);\par
+return 0;\par
+\}\par
+\par
+\par
+\par
+15\par
+\par
+\par
+8\par
+\par
+\par
+3\par
+\par
+\par
+5\par
+\par
+Question: 39\par
+What is the output of the following code?\par
+\par
+include\par
+int add(int x, int y) \{\par
+return x + y;\par
+\}\par
+\par
+int main() \{\par
+int result = add(2, add(3, 5));\par
+printf(\ldblquote %d\rdblquote , result);\par
+return 0;\par
+\}\par
+\par
+\par
+\par
+10\par
+\par
+\par
+8\par
+\par
+\par
+5\par
+\par
+\par
+15\par
+\par
+Question: 40\par
+What is the output of the following code?\par
+\par
+include\par
+void printName(char name[]) \{\par
+printf(\ldblquote Hello, %s!\rdblquote , name);\par
+\}\par
+\par
+int main() \{\par
+char myName[] = \ldblquote John\rdblquote ;\par
+printName(myName);\par
+return 0;\par
+\}\par
+\par
+\par
+\par
+Hello, John!\par
+\par
+\par
+Hello, myName!\par
+\par
+\par
+John\par
+\par
+\par
+Compilation Error\par
+\par
+Question: 41\par
+What is the output of the following code?\par
+\par
+include\par
+void increment(int *x) \{\par
+(*x)++;\par
+\}\par
+\par
+int main() \{\par
+int num = 5;\par
+increment(&num);\par
+printf(\ldblquote %d\rdblquote , num);\par
+return 0;\par
+\}\par
+\par
+\par
+\par
+5\par
+\par
+\par
+6\par
+\par
+\par
+Garbage value\par
+\par
+\par
+Compilation Error\par
+\par
+Question: 42\par
+What is the output of the following code?\par
+\par
+include\par
+void swap(int *a, int *b) \{\par
+int temp = *a;\par
+*a = *b;\par
+*b = temp;\par
+\}\par
+\par
+int main() \{\par
+int x = 6, y = 8;\par
+swap(&x, &y);\par
+printf(\ldblquote x: %d, y: %d\rdblquote , x, y);\par
+return 0;\par
+\}\par
+\par
+\par
+\par
+x: 6, y: 8\par
+\par
+\par
+x: 8, y: 6\par
+\par
+\par
+Compilation Error\par
+\par
+\par
+Undefined behavior\par
+\par
+Question: 43\par
+What is the output of the following code?\par
+\par
+include\par
+int power(int base, int exponent) \{\par
+if (exponent == 0) \{\par
+return 1;\par
+\} else \{\par
+return base * power(base, exponent - 1);\par
+\}\par
+\}\par
+\par
+int main() \{\par
+int result = power(2, 3);\par
+printf(\ldblquote %d\rdblquote , result);\par
+return 0;\par
+\}\par
+\par
+\par
+\par
+2\par
+\par
+\par
+6\par
+\par
+\par
+8\par
+\par
+\par
+16\par
+\par
+Question: 44\par
+What is the output of the following code?\par
+\par
+include\par
+int square(int n) \{\par
+return n * n;\par
+\}\par
+\par
+int main() \{\par
+int x = 2, y = 3;\par
+printf(\ldblquote %d\rdblquote , square(x) + square(y));\par
+return 0;\par
+\}\par
+\par
+\par
+\par
+13\par
+\par
+\par
+25\par
+\par
+\par
+10\par
+\par
+\par
+5\par
+\par
+Question: 45\par
+What is the output of the following code?\par
+\par
+include\par
+void display() \{\par
+printf(\ldblquote Hello, world!\rdblquote );\par
+\}\par
+\par
+int main() \{\par
+void (*func)() = &display;\par
+func();\par
+return 0;\par
+\}\par
+\par
+\par
+\par
+Hello, world!\par
+\par
+\par
+world! Hello,\par
+\par
+\par
+main\par
+\par
+\par
+Compilation Error\par
+\par
+Question: 46\par
+What is the output of the following code?\par
+\par
+include\par
+int sum(int x, int y) \{\par
+return x + y;\par
+\}\par
+\par
+int main() \{\par
+int result = sum(10, 5);\par
+printf(\ldblquote %d\rdblquote , result++);\par
+return 0;\par
+\}\par
+\par
+\par
+\par
+15\par
+\par
+\par
+5\par
+\par
+\par
+10\par
+\par
+\par
+16\par
+\par
+Question: 47\par
+What is the output of the following code?\par
+\par
+include\par
+int sum(int x, int y) \{\par
+return x + y;\par
+\}\par
+\par
+int main() \{\par
+int result = sum(10, 5);\par
+printf(\ldblquote %d\rdblquote , result++);\par
+return 0;\par
+\}\par
+\par
+\par
+\par
+15\par
+\par
+\par
+5\par
+\par
+\par
+10\par
+\par
+\par
+16\par
+\par
+Question: 48\par
+What is the output of the following code?\par
+\par
+include\par
+int add(int x, int y) \{\par
+return x + y;\par
+\}\par
+\par
+int main() \{\par
+int result = add(5, 3);\par
+printf(\ldblquote %d\rdblquote ,++ result++);\par
+return 0;\par
+\}\par
+\par
+\par
+\par
+8\par
+\par
+\par
+5\par
+\par
+\par
+3\par
+\par
+\par
+Compilation Error\par
+\par
+Question: 49\par
+What is the output of the following code?\par
+\par
+include\par
+int multiply(int x, int y) \{\par
+return x * y;\par
+\}\par
+\par
+int main() \{\par
+int result = multiply(3, 5);\par
+printf(\ldblquote %d\rdblquote , result);\par
+return 0;\par
+\}\par
+\par
+\par
+\par
+15\par
+\par
+\par
+8\par
+\par
+\par
+3\par
+\par
+\par
+5\par
+\par
+Question: 50\par
+int add(int x, int y) \{\par
+return x + y;\par
+\}\par
+\par
+int main() \{\par
+int result = add(2, add(3, 5));\par
+printf(\ldblquote %d\rdblquote , result);\par
+return 0;\par
+\}\par
+\par
+\par
+\par
+10\par
+\par
+\par
+8\par
+\par
+\par
+5\par
+\par
+\par
+15\par
+\par
+Question: 51\par
+What is the output of the following code?\par
+\par
+include\par
+void printName(char name[]) \{\par
+printf(\ldblquote Naresh %s!\rdblquote , name);\par
+\}\par
+\par
+int main() \{\par
+char myName[] = \ldblquote IT\rdblquote ;\par
+printName(myName);\par
+return 0;\par
+\}\par
+\par
+\par
+\par
+Naresh IT!\par
+\par
+\par
+Naresh myName!\par
+\par
+\par
+IT\par
+\par
+\par
+Compilation Error\par
+\par
+Question: 52\par
+What is the output of the following code?\par
+\par
+include\par
+void printName(char name[]) \{\par
+printf(\ldblquote Naresh %s!\rdblquote , name);\par
+\}\par
+\par
+int main() \{\par
+char myName[] = \ldblquote IT\rdblquote ;\par
+printName(myName);\par
+return 0;\par
+\}\par
+\par
+\par
+\par
+Naresh IT!\par
+\par
+\par
+Naresh myName!\par
+\par
+\par
+IT\par
+\par
+\par
+Compilation Error\par
+\par
+Question: 53\par
+What is the output of the following code?\par
+\par
+include\par
+void increment(int *x) \{\par
+(*x)++;\par
+\}\par
+\par
+int main() \{\par
+int num = 5;\par
+increment(&num);\par
+printf(\ldblquote %d\rdblquote , num);\par
+return 0;\par
+\}\par
+\par
+\par
+\par
+5\par
+\par
+\par
+6\par
+\par
+\par
+Garbage value\par
+\par
+\par
+Compilation Error\par
+\par
+Question: 54\par
+What is the output of the following code?\par
+\par
+include\par
+void swap(int *a, int *b) \{\par
+int temp = *a;\par
+*a = *b;\par
+*b = temp;\par
+\}\par
+\par
+int main() \{\par
+int x = 20, y = 10;\par
+swap(&x, &y);\par
+printf(\ldblquote x: %d, y: %d\rdblquote , x, y);\par
+return 0;\par
+\}\par
+\par
+\par
+\par
+x: 20, y: 10\par
+\par
+\par
+x: 10, y: 20\par
+\par
+\par
+Compilation Error\par
+\par
+\par
+Undefined behavior\par
+\par
+Question: 55\par
+What is the output of the following code?\par
+\par
+include\par
+int power(int base, int exponent) \{\par
+if (exponent == 0) \{\par
+return 1;\par
+\} else \{\par
+return base * power(base, exponent - 1);\par
+\}\par
+\}\par
+\par
+int main() \{\par
+int result = power(2, 3);\par
+printf(\ldblquote %d\rdblquote , result);\par
+return 0;\par
+\}\par
+\par
+\par
+\par
+2\par
+\par
+\par
+6\par
+\par
+\par
+8\par
+\par
+\par
+16\par
+\par
+Question: 56\par
+What is the output of the following code?\par
+\par
+include\par
+int square(int n) \{\par
+return n * n;\par
+\}\par
+\par
+int main() \{\par
+int x = 6, y = 6;\par
+printf(\ldblquote %d\rdblquote , square(x) + square(y));\par
+return 0;\par
+\}\par
+\par
+\par
+\par
+36\par
+\par
+\par
+72\par
+\par
+\par
+12\par
+\par
+\par
+6\par
+\par
+Question: 57\par
+What is the output of the following code?\par
+\par
+include\par
+int square(int n) \{\par
+return n * n;\par
+\}\par
+\par
+int main() \{\par
+int x = 6, y = 6;\par
+printf(\ldblquote %d\rdblquote , square(x) + square(y));\par
+return 0;\par
+\}\par
+\par
+\par
+\par
+36\par
+\par
+\par
+72\par
+\par
+\par
+12\par
+\par
+\par
+6\par
+\par
+Question: 58\par
+What is the output of the following code?\par
+\par
+include\par
+void display() \{\par
+printf(\ldblquote Hello, world!\rdblquote );\par
+\}\par
+\par
+int main() \{\par
+void (*func)() = &display;\par
+func();\par
+return 0;\par
+\}\par
+\par
+\par
+\par
+Hello, world!\par
+\par
+\par
+world! Hello,\par
+\par
+\par
+main\par
+\par
+\par
+Compilation Error\par
+\par
+Question: 59\par
+What is the output of the following code?\par
+\par
+include\par
+int sum(int x, int y) \{\par
+return x + y;\par
+\}\par
+\par
+int main() \{\par
+int result = sum(3, 5);\par
+printf(\ldblquote %d\rdblquote , *result);\par
+return 0;\par
+\}\par
+\par
+\par
+\par
+8\par
+\par
+\par
+3\par
+\par
+\par
+4\par
+\par
+\par
+Error\par
+\par
+Question: 60\par
+What is the output of the following code?\par
+\par
+include\par
+int add(int x, int y) \{\par
+return x + y;\par
+\}\par
+\par
+int main() \{\par
+int result = add(5,5);\par
+printf(\ldblquote %d\rdblquote , result);\par
+return 0;\par
+\}\par
+\par
+\par
+\par
+10\par
+\par
+\par
+5\par
+\par
+\par
+25\par
+\par
+\par
+Garbage value\par
+\par
+Question: 61\par
+What is the output of the following code?\par
+\par
+include\par
+int multiply(int x, int y) \{\par
+return x * y;\par
+\}\par
+\par
+int main() \{\par
+int result = multiply(5, 5);\par
+printf(\ldblquote %d\rdblquote , result);\par
+return 0;\par
+\}\par
+\par
+\par
+\par
+15\par
+\par
+\par
+10\par
+\par
+\par
+25\par
+\par
+\par
+5\par
+\par
+Question: 62\par
+What is the output of the following code?\par
+\par
+include\par
+int add(int x, int y) \{\par
+return x + y;\par
+\}\par
+\par
+int main() \{\par
+int result = add(6, add(7, 5));\par
+printf(\ldblquote %d\rdblquote , result);\par
+return 0;\par
+\}\par
+\par
+\par
+\par
+12\par
+\par
+\par
+18\par
+\par
+\par
+6\par
+\par
+\par
+11\par
+\par
+Question: 63\par
+What is the output of the following code?\par
+\par
+include\par
+void increment(int *x) \{\par
+(*x)++;\par
+\}\par
+\par
+int main() \{\par
+int num = 5;\par
+increment(&num);\par
+printf(\ldblquote %d\rdblquote , num);\par
+return 0;\par
+\}\par
+\par
+\par
+\par
+5\par
+\par
+\par
+6\par
+\par
+\par
+Garbage value\par
+\par
+\par
+Compilation Error\par
+\par
+Question: 64\par
+What is the output of the following code?\par
+\par
+include\par
+void display() \{\par
+printf(\ldblquote Hello, world!\rdblquote );\par
+\}\par
+\par
+int main() \{\par
+void (*func)() = &display;\par
+func();\par
+return 0;\par
+\}\par
+\par
+\par
+\par
+Hello, world!\par
+\par
+\par
+world! Hello,\par
+\par
+\par
+main\par
+\par
+\par
+Compilation Error\par
+}
+ 

@@ -1,0 +1,22 @@
+#include <stdio.h>
+ 
+int main(){
+    char inputString[100];
+ 
+    int index, frequency[256] = {0};
+    printf("Enter a String\n");
+    gets(inputString);
+     
+    for(index=0; inputString[index] != '\0'; index++){
+        frequency[inputString[index]]++;
+    }
+     
+    printf("\nCharacter   Frequency\n");
+    for(index=0; index < 256; index++){
+        if(frequency[index] != 0){
+            printf("%5c%10d\n",index,frequency[index]);                    
+        }
+    }
+ 
+    return 0;
+}

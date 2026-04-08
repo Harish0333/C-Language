@@ -1,0 +1,2960 @@
+{\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Calibri;}{\f1\fnil Calibri;}}
+{\*\generator Riched20 10.0.22621}\viewkind4\uc1 
+\pard\sa200\sl276\slmult1\f0\fs22\lang9 What is a pointer in C?\par
+\par
+\par
+\par
+A variable that stores the memory address of another variable\par
+\par
+\par
+A variable that stores the value of another variable\par
+\par
+\par
+A keyword used to allocate memory dynamically\par
+\par
+\par
+A function used to access data from an array\par
+\par
+Question: 2\par
+Which operator is used to declare a pointer variable?\par
+\par
+\par
+\par
+*\par
+\par
+\par
+&\par
+\par
+\par
+%\par
+\par
+\par
+$\par
+\par
+Question: 3\par
+How do you access the value stored in a pointer?\par
+\par
+\par
+\par
+Using the * operator\par
+\par
+\par
+Using the & operator\par
+\par
+\par
+Using the % operator\par
+\par
+\par
+Using the -> operator\par
+\par
+Question: 4\par
+What is the size of a pointer variable?\par
+\par
+\par
+\par
+2 bytes\par
+\par
+\par
+4 bytes\par
+\par
+\par
+8 bytes\par
+\par
+\par
+Depends on the architecture of the system\par
+\par
+Question: 5\par
+What is the output of the following code snippet?\par
+int x = 10;\par
+int *ptr = &x;\par
+printf(\ldblquote %d\rdblquote , ptr);\par
+\par
+\par
+\par
+10\par
+\par
+\par
+Address of x\par
+\par
+\par
+Garbage value\par
+\par
+\par
+Compilation error\par
+\par
+Question: 6\par
+What does the following statement do?\par
+int *ptr = NULL;\par
+\par
+\par
+\par
+Declares an integer pointer and assigns it a random memory address\par
+\par
+\par
+Declares an integer pointer and initializes it to zero\par
+\par
+\par
+Declares an integer pointer without any initialization\par
+\par
+\par
+Declares an integer pointer and assigns it a value of -1\par
+\par
+Question: 7\par
+What is a null pointer?\par
+\par
+\par
+\par
+A pointer that points to a memory location containing zeros\par
+\par
+\par
+A pointer with a value of zero, indicating it points nowhere\par
+\par
+\par
+A pointer that points to the address of the first element in an array\par
+\par
+\par
+A pointer that holds garbage values\par
+\par
+Question: 8\par
+What happens when you try to dereference a null pointer?\par
+\par
+\par
+\par
+It will crash the program.\par
+\par
+\par
+It will print 0.\par
+\par
+\par
+It will print the address of the null pointer.\par
+\par
+\par
+It results in undefined behavior.\par
+\par
+Question: 9\par
+What is the output of the following code snippet?\par
+\par
+int arr[] = \{1, 2, 3, 4, 5\};\par
+int *ptr = arr;\par
+printf(\ldblquote %d\rdblquote , *(ptr + 2));\par
+\par
+\par
+\par
+1\par
+\par
+\par
+2\par
+\par
+\par
+3\par
+\par
+\par
+4\par
+\par
+Question: 10\par
+What is the difference between ptr++ and ++ptr?\par
+\par
+\par
+\par
+Both are identical and increment the pointer by one.\par
+\par
+\par
+ptr++ increments the pointer, while ++ptr increments the value pointed to by the pointer.\par
+\par
+\par
+ptr++ dereferences the pointer, while ++ptr increments the address stored in the pointer.\par
+\par
+\par
+ptr++ increments the value pointed to by the pointer, while ++ptr increments the pointer.\par
+\par
+Question: 11\par
+What does the const keyword mean in a pointer declaration?\par
+\par
+\par
+\par
+It declares a constant pointer that cannot be modified.\par
+\par
+\par
+It declares a pointer that points to a constant value.\par
+\par
+\par
+It declares a constant pointer that points to a constant value.\par
+\par
+\par
+It declares a pointer that cannot be null.\par
+\par
+Question: 12\par
+What is the output of the following code snippet?\par
+\par
+char str[] = \ldblquote Hello\rdblquote ;\par
+char *ptr = str;\par
+printf(\ldblquote %c\rdblquote , *++ptr);\par
+\par
+\par
+\par
+H\par
+\par
+\par
+e\par
+\par
+\par
+l\par
+\par
+\par
+o\par
+\par
+Question: 13\par
+What is the purpose of the void pointer in C?\par
+\par
+\par
+\par
+It is used to allocate memory dynamically.\par
+\par
+\par
+It is a generic pointer used to store memory addresses of any data type.\par
+\par
+\par
+It is used to declare functions that do not return any value.\par
+\par
+\par
+It is used to declare variables that have no specific data type.\par
+\par
+Question: 14\par
+What is the output of the following code snippet?\par
+\par
+int x = 10;\par
+int *ptr1 = &x;\par
+int *ptr2 = ptr1;\par
+printf(\ldblquote %d\rdblquote , *ptr2);\par
+\par
+\par
+\par
+10\par
+\par
+\par
+Address of x\par
+\par
+\par
+Garbage value\par
+\par
+\par
+Compilation error\par
+\par
+Question: 15\par
+Can you perform pointer arithmetic on a void pointer?\par
+\par
+\par
+\par
+Yes\par
+\par
+\par
+No\par
+\par
+Question: 16\par
+What is the correct syntax to allocate memory dynamically for an integer pointer?\par
+\par
+\par
+\par
+ptr = malloc(sizeof(int));\par
+\par
+\par
+*ptr = malloc(int);\par
+\par
+\par
+ptr = malloc(sizeof(int*));\par
+\par
+\par
+*ptr = malloc(sizeof(int));\par
+\par
+Question: 17\par
+What happens if dynamic memory allocation using malloc fails?\par
+\par
+\par
+\par
+The program continues executing normally.\par
+\par
+\par
+The program crashes.\par
+\par
+\par
+The operating system automatically frees up memory.\par
+\par
+\par
+malloc returns a NULL pointer.\par
+\par
+Question: 18\par
+How do you release memory allocated using malloc?\par
+\par
+\par
+\par
+Call free(ptr);\par
+\par
+\par
+Set ptr to NULL.\par
+\par
+\par
+Call delete ptr;\par
+\par
+\par
+Assign 0 to ptr.\par
+\par
+Question: 19\par
+What is the output of the following code snippet?\par
+\par
+int arr[] = \{1, 2, 3, 4, 5\};\par
+int *ptr = arr + 3;\par
+printf(\ldblquote %d\rdblquote , *ptr);\par
+\par
+\par
+\par
+1\par
+\par
+\par
+2\par
+\par
+\par
+3\par
+\par
+\par
+4\par
+\par
+Question: 20\par
+What is the purpose of the sizeof operator when used with a pointer?\par
+\par
+\par
+\par
+It gives the size of the data type the pointer points to.\par
+\par
+\par
+It gives the size of the pointer variable itself.\par
+\par
+\par
+It gives the total size of memory allocated to the pointer.\par
+\par
+\par
+It gives the size of the array the pointer points to.\par
+\par
+Question: 21\par
+What is the output of the following code snippet?\par
+\par
+int x = 5;\par
+int *ptr = &x;\par
+*ptr += 3;\par
+printf(\ldblquote %d\rdblquote , x);\par
+\par
+\par
+\par
+5\par
+\par
+\par
+8\par
+\par
+\par
+3\par
+\par
+\par
+15\par
+\par
+Question: 22\par
+Can a pointer point to itself?\par
+\par
+\par
+\par
+Yes\par
+\par
+\par
+No\par
+\par
+Question: 23\par
+What is the output of the following code snippet?\par
+\par
+int *ptr = malloc(5 * sizeof(int));\par
+printf(\ldblquote %p\rdblquote , ptr);\par
+\par
+\par
+\par
+Address of ptr\par
+\par
+\par
+Garbage value\par
+\par
+\par
+NULL\par
+\par
+\par
+Address of the allocated memory block\par
+\par
+Question: 24\par
+How do you access the nth element of an array using a pointer?\par
+\par
+\par
+\par
+*(arr + n)\par
+\par
+\par
+*arr[n]\par
+\par
+\par
+*(arr[n])\par
+\par
+\par
+arr[n]\par
+\par
+Question: 25\par
+What is the output of the following code snippet?\par
+\par
+int x = 10;\par
+int *ptr = &x;\par
+int **pptr = &ptr;\par
+printf(\ldblquote %d\rdblquote , **pptr);\par
+\par
+\par
+\par
+10\par
+\par
+\par
+Address of x\par
+\par
+\par
+Garbage value\par
+\par
+\par
+Compilation error\par
+\par
+Question: 26\par
+What is a function pointer in C?\par
+\par
+\par
+\par
+A pointer that stores the address of a function\par
+\par
+\par
+A pointer used as a function argument\par
+\par
+\par
+A pointer returned by a function\par
+\par
+\par
+A pointer declared within a function\par
+\par
+Question: 27\par
+How do you declare a function pointer for a function that takes an int parameter and returns void?\par
+\par
+\par
+\par
+void (*ptr)(int);\par
+\par
+\par
+int (*ptr)(void);\par
+\par
+\par
+void *ptr(int);\par
+\par
+\par
+int *ptr(void);\par
+\par
+Question: 28\par
+What is the purpose of the typedef keyword when used with function pointers?\par
+\par
+\par
+\par
+It declares a new function.\par
+\par
+\par
+It creates an alias for a function pointer type.\par
+\par
+\par
+It creates a pointer to a typedef-defined function.\par
+\par
+\par
+It creates a function that returns a pointer.\par
+\par
+Question: 29\par
+What is the output of the following code snippet?\par
+\par
+int add(int a, int b) \{\par
+return a + b;\par
+\}\par
+\par
+int (*ptr)(int, int) = &add;\par
+printf(\ldblquote %d\rdblquote , ptr(3, 5));\par
+\par
+\par
+\par
+8\par
+\par
+\par
+15\par
+\par
+\par
+Address of add function\par
+\par
+\par
+Compilation error\par
+\par
+Question: 30\par
+What is the purpose of the restrict keyword in a pointer declaration?\par
+\par
+\par
+\par
+It specifies that the pointer cannot be changed.\par
+\par
+\par
+It suggests to the compiler that the pointer will not be used to access other objects.\par
+\par
+\par
+It ensures that the pointer always points to the same memory address.\par
+\par
+\par
+It restricts the pointer to point only to global variables.\par
+\par
+Question: 31\par
+What is the output of the following code snippet?\par
+\par
+int arr[3][3] = \{ \{1, 2, 3\}, \{4, 5, 6\}, \{7, 8, 9\} \};\par
+int *ptr = &arr[0][0];\par
+printf(\ldblquote %d\rdblquote , *(ptr + 4));\par
+\par
+\par
+\par
+1\par
+\par
+\par
+2\par
+\par
+\par
+5\par
+\par
+\par
+6\par
+\par
+Question: 32\par
+What is a function returning a pointer in C?\par
+\par
+\par
+\par
+A function that takes a pointer as an argument\par
+\par
+\par
+A function that returns an address of a variable\par
+\par
+\par
+A function that returns a pointer to an array\par
+\par
+\par
+A function that returns the address of another function\par
+\par
+Question: 33\par
+What is the correct syntax to declare a function that returns a pointer to an integer?\par
+\par
+\par
+\par
+int *func();\par
+\par
+\par
+*int func();\par
+\par
+\par
+int (*func)();\par
+\par
+\par
+int *func(void);\par
+\par
+Question: 34\par
+What is the output of the following code snippet?\par
+\par
+char *str = \ldblquote Hello\rdblquote ;\par
+printf(\ldblquote %c\rdblquote , *(str + 2));\par
+\par
+\par
+\par
+H\par
+\par
+\par
+e\par
+\par
+\par
+l\par
+\par
+\par
+0\par
+\par
+Question: 35\par
+How do you pass a pointer to a function as an argument?\par
+\par
+\par
+\par
+By using the & operator when calling the function\par
+\par
+\par
+By using the * operator when calling the function\par
+\par
+\par
+By passing the pointer variable directly\par
+\par
+\par
+By dereferencing the pointer before passing it\par
+\par
+Question: 36\par
+What is the output of the following code snippet?\par
+\par
+int arr[] = \{1, 2, 3, 4, 5\};\par
+int *ptr = arr;\par
+printf(\ldblquote %d\rdblquote , ptr[2]);\par
+\par
+\par
+\par
+1\par
+\par
+\par
+2\par
+\par
+\par
+3\par
+\par
+\par
+4\par
+\par
+Question: 37\par
+Can you compare two pointers using the relational operators (<, >, <=, >=)?\par
+\par
+\par
+\par
+Yes\par
+\par
+\par
+No\par
+\par
+Question: 38\par
+What is the output of the following code snippet?\par
+\par
+int x = 5;\par
+int y = 10;\par
+int *ptr1 = &x;\par
+int *ptr2 = &y;\par
+printf(\ldblquote %d\rdblquote , *ptr1 + *ptr2);\par
+\par
+\par
+\par
+5\par
+\par
+\par
+10\par
+\par
+\par
+15\par
+\par
+\par
+Garbage value\par
+\par
+Question: 39\par
+What is the output of the following code snippet?\par
+\par
+int x = 10;\par
+int *ptr = &x;\par
+int *p = ptr++;\par
+printf(\ldblquote %d\rdblquote , *p);\par
+\par
+\par
+\par
+10\par
+\par
+\par
+Address of x\par
+\par
+\par
+Garbage value\par
+\par
+\par
+Compilation error\par
+\par
+Question: 40\par
+What is the purpose of the volatile keyword when used with a pointer?\par
+\par
+\par
+\par
+It specifies that the pointer cannot be changed.\par
+\par
+\par
+It suggests to the compiler not to optimize the pointer access.\par
+\par
+\par
+It ensures that the pointer always points to the same memory address.\par
+\par
+\par
+It restricts the pointer to point only to global variables.\par
+\par
+Question: 41\par
+What is the output of the following code snippet?\par
+\par
+int x = 10;\par
+int *ptr = &x;\par
+int *p = ++ptr;\par
+printf(\ldblquote %d\rdblquote , *p);\par
+\par
+\par
+\par
+10\par
+\par
+\par
+Address of x\par
+\par
+\par
+Garbage value\par
+\par
+\par
+Compilation error\par
+\par
+Question: 42\par
+What is the output of the following code snippet?\par
+\par
+char str[] = \ldblquote Hello\rdblquote ;\par
+char *ptr = str;\par
+printf(\ldblquote %c\rdblquote , *ptr++);\par
+\par
+\par
+\par
+H\par
+\par
+\par
+e\par
+\par
+\par
+l\par
+\par
+\par
+0\par
+\par
+Question: 43\par
+Can you perform arithmetic operations on void pointers?\par
+\par
+\par
+\par
+Yes\par
+\par
+\par
+No\par
+\par
+Question: 44\par
+What is the output of the following code snippet?\par
+\par
+int arr[] = \{1, 2, 3, 4, 5\};\par
+int *ptr = arr + 2;\par
+printf(\ldblquote %d\rdblquote , *ptr++);\par
+\par
+\par
+\par
+1\par
+\par
+\par
+2\par
+\par
+\par
+3\par
+\par
+\par
+4\par
+\par
+Question: 45\par
+How do you find the address of a pointer variable?\par
+\par
+\par
+\par
+Using the * operator\par
+\par
+\par
+Using the & operator\par
+\par
+\par
+Using the -> operator\par
+\par
+\par
+Using the sizeof operator\par
+\par
+Question: 46\par
+What is the output of the following code snippet?\par
+\par
+int arr[] = \{1, 2, 3, 4, 5\};\par
+int *ptr = arr;\par
+printf(\ldblquote %d\rdblquote , ptr++);\par
+\par
+\par
+\par
+Address of arr[0]\par
+\par
+\par
+1\par
+\par
+\par
+2\par
+\par
+\par
+Compilation error\par
+\par
+Question: 47\par
+What is the output of the following code snippet?\par
+\par
+int arr[] = \{1, 2, 3, 4, 5\};\par
+int *ptr = &arr[3];\par
+printf(\ldblquote %d\rdblquote , *(ptr - 2));\par
+\par
+\par
+\par
+1\par
+\par
+\par
+2\par
+\par
+\par
+3\par
+\par
+\par
+4\par
+\par
+Question: 48\par
+What is the purpose of the far keyword when used with a pointer?\par
+\par
+\par
+\par
+It declares a pointer that can access memory located far away.\par
+\par
+\par
+It specifies that the pointer cannot be changed.\par
+\par
+\par
+It ensures that the pointer always points to the same memory address.\par
+\par
+\par
+It restricts the pointer to point only to global variables.\par
+\par
+Question: 49\par
+What is the output of the following code snippet?\par
+\par
+int arr[3] = \{10, 20, 30\};\par
+int *ptr1 = arr;\par
+int *ptr2 = arr + 2;\par
+printf(\ldblquote %d\rdblquote , ptr2 - ptr1);\par
+\par
+\par
+\par
+2\par
+\par
+\par
+8\par
+\par
+\par
+1\par
+\par
+\par
+Compilation error\par
+\par
+Question: 50\par
+What is the output of the following code snippet?\par
+\par
+int x = 10;\par
+int *ptr1 = &x;\par
+int *ptr2 = &x;\par
+printf(\ldblquote %d\rdblquote , ptr1 == ptr2);\par
+\par
+\par
+\par
+0\par
+\par
+\par
+1\par
+\par
+\par
+Address of x\par
+\par
+\par
+Garbage value\par
+\par
+Question: 51\par
+What is the output of C Program.? int main() \{ char grade[] = \{\lquote A\rquote ,\rquote B\rquote ,\rquote C\rquote\}; printf(\ldblquote GRADE=%c, \ldblquote , *grade); printf(\ldblquote GRADE=%d\rdblquote , grade); \}\par
+\par
+\par
+\par
+GRADE=some address of array, GRADE=A\par
+\par
+\par
+GRADE=A, GRADE=some address of array\par
+\par
+\par
+GRADE=A, GRADE=A\par
+\par
+\par
+Compiler error\par
+\par
+Question: 52\par
+What is the output of C program.? int main() \{ char grade[] = \{\lquote A\rquote ,\rquote B\rquote ,\rquote C\rquote\}; printf(\ldblquote GRADE=%d, \ldblquote , *grade); printf(\ldblquote GRADE=%d\rdblquote , grade[0]); \}\par
+\par
+\par
+\par
+A A\par
+\par
+\par
+65 A\par
+\par
+\par
+65 65\par
+\par
+\par
+None of the above\par
+\par
+Question: 53\par
+What is the output of C Program with String Pointer.?\par
+int main()\par
+\{\par
+char country[]=\rdblquote BRAZIL\rdblquote ;\par
+char *ptr;\par
+ptr=country;\par
+while(*ptr != \lquote\\0\rquote )\par
+\{\par
+printf(\ldblquote %c\rdblquote , *ptr);\par
+ptr++;\par
+\}\par
+return 0;\par
+\}\par
+\par
+\par
+\par
+B\par
+\par
+\par
+BRAZIL\par
+\par
+\par
+Compiler error\par
+\par
+\par
+None of the above\par
+\par
+Question: 54\par
+How do you accept a Multi Word Input in C Language.?\par
+\par
+\par
+\par
+SCANF\par
+\par
+\par
+GETS\par
+\par
+\par
+GETC\par
+\par
+\par
+FINDS\par
+\par
+Question: 55\par
+What is the output of C Program with String Pointers.?\par
+int main()\par
+\{\par
+char *p1 = \ldblquote GOAT\rdblquote ;\par
+char *p2;\par
+p2 = p1;\par
+printf(\ldblquote %s\rdblquote , p2);\par
+\}\par
+\par
+\par
+\par
+G\par
+\par
+\par
+GOAT\par
+\par
+\par
+Compiler error\par
+\par
+\par
+None of the above\par
+\par
+Question: 56\par
+What is the output of C Program with String arrays.?\par
+int main()\par
+\{\par
+char *p1 = \ldblquote GOAT\rdblquote ;\par
+char *p2;\par
+p2 = p1;\par
+p2=\rdblquote ANT\rdblquote ;\par
+printf(\ldblquote %s\rdblquote , p1);\par
+\}\par
+\par
+\par
+\par
+ANT\par
+\par
+\par
+GOAT\par
+\par
+\par
+G\par
+\par
+\par
+A\par
+\par
+Question: 57\par
+What is the output of C Program with String Arrays.?\par
+int main()\par
+\{\par
+char p[] = \ldblquote GODZILLA\rdblquote ;\par
+int i=0;\par
+while(p[i] != \lquote\\0\rquote )\par
+\{\par
+printf(\ldblquote %c\rdblquote ,*(p+i));\par
+i++;\par
+\}\par
+\}\par
+\par
+\par
+\par
+G\par
+\par
+\par
+GODZILLA\par
+\par
+\par
+Compiler error\par
+\par
+\par
+None of the above\par
+\par
+Question: 58\par
+A C string elements are always stored in.?\par
+\par
+\par
+\par
+Random memory locations\par
+\par
+\par
+Alternate memory locations\par
+\par
+\par
+Sequential memory locations\par
+\par
+\par
+None of the above\par
+\par
+Question: 59\par
+What is the output of C program with array of pointers to strings.?\par
+int main()\par
+\{\par
+char *code[]=\{\ldblquote IN\rdblquote ,\rdblquote USA\rdblquote ,\rdblquote K\rdblquote\};\par
+printf(\ldblquote %s\rdblquote , code[1]);\par
+return 0;\par
+\}\par
+\par
+\par
+\par
+IN\par
+\par
+\par
+U\par
+\par
+\par
+USA\par
+\par
+\par
+Compiler error\par
+\par
+Question: 60\par
+What is the output of C program with array of pointers to strings.?\par
+int main()\par
+\{\par
+char *code[2];\par
+code[0]= (char *)malloc(4);\par
+strcpy(code[0], \ldblquote IND\rdblquote );\par
+printf(\ldblquote %s\rdblquote , code[0]);\par
+return 0;\par
+\}\par
+\par
+\par
+\par
+I\par
+\par
+\par
+IN\par
+\par
+\par
+IND\par
+\par
+\par
+Compiler error\par
+\par
+Question: 61\par
+What is the output of C program with strings.?\par
+int main()\par
+\{\par
+char *code=\rdblquote JUMPER\rdblquote ;\par
+if(code[6]==\rquote\\o\rquote )\par
+\{\par
+printf(\ldblquote SUMMER\rdblquote );\par
+\}\par
+else\par
+\{\par
+printf(\ldblquote WINTER\rdblquote );\par
+\}\par
+return 0;\par
+\}\par
+\par
+\par
+\par
+SUMMER\par
+\par
+\par
+WINTER\par
+\par
+\par
+Compiler error\par
+\par
+\par
+None of the above\par
+\par
+Question: 62\par
+What is the output of C Program with arrays and pointers.? int main() \{ int a[3] = \{20,30,40\}; int (*p)[3]; p=&a; printf(\ldblquote %d\rdblquote , (*p)[0]); \}\par
+\par
+\par
+\par
+20\par
+\par
+\par
+0\par
+\par
+\par
+address of element 20\par
+\par
+\par
+Compiler error\par
+\par
+Question: 63\par
+What is the output of C program with arrays and pointers.? int main() \{ int a[3] = \{20,30,40\}; int *p[3]; p=&a; printf(\ldblquote %d\rdblquote , *p[0]); \}\par
+\par
+\par
+\par
+20\par
+\par
+\par
+address of element 20\par
+\par
+\par
+Garbage value\par
+\par
+\par
+Compiler error\par
+\par
+Question: 64\par
+What is the output of C program with arrays and pointers.? int main() \{ int a[3] = \{20,30,40\}; printf(\ldblquote %d\rdblquote , *(a+1)); \}\par
+\par
+\par
+\par
+20\par
+\par
+\par
+30\par
+\par
+\par
+40\par
+\par
+\par
+Compiler error\par
+\par
+Question: 65\par
+What is the output of C Program with arrays and pointers.? void change(int[]); int main() \{ int a[3] = \{20,30,40\}; change(a); printf(\ldblquote %d %d\rdblquote , *a, a[0]); \} void change(int a[]) \{ a[0] = 10; \}\par
+\par
+\par
+\par
+20 20\par
+\par
+\par
+10 20\par
+\par
+\par
+10 10\par
+\par
+\par
+20 30\par
+\par
+Question: 66\par
+An entire array is always passed by _ to a called function.\par
+\par
+\par
+\par
+Call by value\par
+\par
+\par
+Call by reference\par
+\par
+\par
+Address relocation\par
+\par
+\par
+Address restructure\par
+\par
+Question: 67\par
+What is the output of C program with arrays and pointers.?\par
+int main()\par
+\{\par
+int size=4;\par
+int a[size];\par
+a[0]=5;a[1]=6;\par
+a[2]=7;a[3]=8;\par
+printf(\ldblquote %d %d\rdblquote , *(a+2), a[1]);\par
+\}\par
+\par
+\par
+\par
+8 6\par
+\par
+\par
+7 6\par
+\par
+\par
+6 6\par
+\par
+\par
+Compiler error\par
+\par
+Question: 68\par
+If an integer array pointer is incremented, how many bytes will be skipped to reach next element location.?\par
+\par
+\par
+\par
+1\par
+\par
+\par
+2\par
+\par
+\par
+8\par
+\par
+\par
+None of the above\par
+\par
+Question: 69\par
+What is the output of C Program with arrays and pointers.?\par
+int main()\par
+\{\par
+int ary[] = \{10,20,30\}, *p;\par
+p = &ary[0];\par
+int i=0;\par
+while(i<3)\par
+\{\par
+printf(\ldblquote %d \ldblquote , *p);\par
+p++;\par
+i++;\par
+\}\par
+return 0;\par
+\}\par
+\par
+\par
+\par
+10 10 10\par
+\par
+\par
+10 20 20\par
+\par
+\par
+10 20 30\par
+\par
+\par
+randomvalue randomvalue randomvalue\par
+\par
+Question: 70\par
+Choose a correct Syntax for malloc() function to allocate memory to an array at run time.\par
+\par
+\par
+\par
+int p;\par
+p = (int)malloc(10*sizeof(int));\par
+\par
+\par
+int p;\par
+p = (int)malloc(10,sizeof(int));\par
+\par
+\par
+int p;\par
+p = (int)malloc(sizeof(int), 10);\par
+\par
+\par
+int p;\par
+p = (int)malloc(10*sizeof(int *));\par
+\par
+Question: 71\par
+What is the syntax of CALLOC to allocate memory to an array at runtime.?\par
+\par
+\par
+\par
+int p;\par
+p = (int)calloc(10, sizeof(int));\par
+\par
+\par
+int p;\par
+p = (int)calloc(10*sizeof(int));\par
+\par
+\par
+int p;\par
+p = (int)calloc(sizeof(int), 10);\par
+\par
+\par
+int p;\par
+p = (int)calloc(10, sizeof(int *));\par
+\par
+Question: 72\par
+Choose a correct statement with array pointers.\par
+\par
+\par
+\par
+It is valid to add an integer number to an array pointer. Result can be anything.\par
+\par
+\par
+It is valid to subtract an integer number from array pointer. Result can be anything.\par
+\par
+\par
+Difference of pointers to two elements of an array gives the difference between their indexes.\par
+\par
+\par
+All the above\par
+\par
+Question: 73\par
+Choose correct statement about C array pointers.\par
+\par
+\par
+\par
+You can compare two array elements with *p == *(p+i)\par
+\par
+\par
+You can compare two pointers with p1==p2.\par
+\par
+\par
+Accessing out of bounds index element is valid and it returns a garbage value.\par
+\par
+\par
+All the above.\par
+\par
+Question: 74\par
+What is the output of C Program with arrays and pointers.?\par
+int main()\par
+\{\par
+int ary[] = \{11, 33, 55\};\par
+int *p, *q;\par
+p = ary;\par
+q = ary+2;\par
+printf(\ldblquote %d %d\rdblquote ,*p, *q);\par
+return 0;\par
+\}\par
+\par
+\par
+\par
+11 55\par
+\par
+\par
+11 13\par
+\par
+\par
+11 33\par
+\par
+\par
+Compiler error\par
+\par
+Question: 75\par
+Difference between C Arrays, ary[10] and cry[10][10] is.?\par
+\par
+\par
+\par
+ary[10] is a single dimensional array. cry[10][10] is a Multidimensional array.\par
+\par
+\par
+ary[10] is a multidimensional array. cry[10][10] is a single dimensional array.\par
+\par
+\par
+Size of ary[10] is sizeof(10* int). Size of cry[10][10] is sizeof(10*int).\par
+\par
+\par
+None of the above.\par
+\par
+Question: 76\par
+What is the output of C Program.?\par
+int main()\par
+\{\par
+int ary[2][2][3] = \{\par
+\{\{1,2,3\},\{4,5,6\}\},\par
+\{\{7,8,9\},\{10,11,12\}\}\par
+\};\par
+int *p;\par
+p = &ary;\par
+printf(\ldblquote %d %d\rdblquote ,*p, *p+11);\par
+return 0;\par
+\}\par
+\par
+\par
+\par
+1 11\par
+\par
+\par
+1 12\par
+\par
+\par
+2 12\par
+\par
+\par
+Compiler error\par
+\par
+Question: 77\par
+What is the output of C Program.?\par
+int main()\par
+\{\par
+int ary[2][2][3] = \{\par
+\{\{1,2,3\},\{4,5,6\}\},\par
+\{\{7,8,9\},\{10,11,12\}\}\par
+\};\par
+printf(\ldblquote %d\rdblquote ,((*(ary+1)+ 1)+2));\par
+return 0;\par
+\}\par
+\par
+\par
+\par
+10\par
+\par
+\par
+11\par
+\par
+\par
+12\par
+\par
+\par
+Compiler error\par
+\par
+Question: 78\par
+Choose a correct C Statement to choose number 66 in the array, int ary[3][2] = \{\{11,22\},\{33,44\},\{55,66\}\};\par
+\par
+\par
+\par
+ary[2][1]\par
+\par
+\par
+((ary+2)+1)\par
+\par
+\par
+*ary[2]+1\par
+\par
+\par
+All the above\par
+\par
+Question: 79\par
+Choose a correct statement about a Multidimensional array and pointer.?\par
+\par
+\par
+\par
+int *ptr[N] is an array of N integer pointers. Size is N * sizeof(1*int).\par
+\par
+\par
+int (*ptr)[N] is a pointer to an array of N elements. Size of ptr is size of 1 integer.\par
+\par
+\par
+An multidimensional array or a single dimensional array can contain pointer elements.\par
+\par
+\par
+All the above\par
+\par
+Question: 80\par
+A pointer is\par
+\par
+\par
+\par
+A variable that stores address of an instruction\par
+\par
+\par
+A variable that stores address of other variable\par
+\par
+\par
+A keyword used to create variables\par
+\par
+\par
+None of these\par
+\par
+Question: 81\par
+The reason for using pointers in a C program is\par
+\par
+\par
+\par
+Pointers allow different functions to share and modify their local variables.\par
+\par
+\par
+To pass large structures so that complete copy of the structure can be avoided.\par
+\par
+\par
+Pointers enable complex \ldblquote linked\rdblquote  data structures like linked lists and binary trees.\par
+\par
+\par
+All of the above\par
+\par
+Question: 82\par
+How can you write a[i][j][k][l] in equivalent pointer expression?\par
+\par
+\par
+\par
+(((*(a+i)+j)+k)+l)\par
+\par
+\par
+((**(*(a+i)+j)+k)+l)\par
+\par
+\par
+(((*(a+i)+j)+k)+l)\par
+\par
+\par
+((((a+i)+j)+k)+l)\par
+\par
+Question: 83\par
+What is wild pointer?\par
+\par
+\par
+\par
+Pointer which is wild in nature\par
+\par
+\par
+Pointer which has no value.\par
+\par
+\par
+Pointer which is not initialized\par
+\par
+\par
+None\par
+\par
+Question: 84\par
+Address stored in the pointer variable is of type ______.\par
+\par
+\par
+\par
+Integer\par
+\par
+\par
+Float\par
+\par
+\par
+Array\par
+\par
+\par
+Character\par
+\par
+Question: 85\par
+Comment on this const int *ptr;\par
+\par
+\par
+\par
+You cannot change the value pointed by ptr\par
+\par
+\par
+You cannot change the pointer ptr itself\par
+\par
+\par
+Both (a) and (b)\par
+\par
+\par
+You can change the pointer as well as the value pointed by it\par
+\par
+Question: 86\par
+Choose the best one - prior to using a pointer variable\par
+\par
+\par
+\par
+It should be declared.\par
+\par
+\par
+It should be initialized\par
+\par
+\par
+It should be both declared and initialized.\par
+\par
+\par
+None of the above.\par
+\par
+Question: 87\par
+What is the output of this program?\par
+\par
+include\par
+void test(int * , int *);\par
+void main()\par
+\{\par
+int a = 5 , b = 6;\par
+test(&a,&b);\par
+printf(\ldblquote %d %d\rdblquote ,a,b);\par
+\}\par
+void test(int *p, int *q)\par
+\{\par
+*p = *p * *q;\par
+*q = *p / *q;\par
+*p = *p / *q;\par
+\}\par
+\par
+\par
+\par
+30 5\par
+\par
+\par
+6 5\par
+\par
+\par
+5 6\par
+\par
+\par
+None of the above\par
+\par
+Question: 88\par
+What is the output of this program?\par
+\par
+include\par
+void test(char**);\par
+\par
+int main()\par
+\{\par
+char *argv[] = \{\ldblquote a\rdblquote , \ldblquote b\rdblquote , \ldblquote c\rdblquote , \ldblquote d\rdblquote\};\par
+test(argv);\par
+return 0;\par
+\}\par
+void test(char **p)\par
+\{\par
+char *m;\par
+m = (p+= sizeof(int))[-2];\par
+printf(\ldblquote %s\rdblquote , m);\par
+\}\par
+\par
+\par
+\par
+a\par
+\par
+\par
+b\par
+\par
+\par
+c\par
+\par
+\par
+d\par
+\par
+Question: 89\par
+What is the output of this program?\par
+\par
+include\par
+int main()\par
+\{\par
+char *ptr = \ldblquote Hello\rdblquote ;\par
+printf(\ldblquote %c\rdblquote , &&*ptr);\par
+return 0;\par
+\}\par
+\par
+\par
+\par
+H\par
+\par
+\par
+Compilation Error\par
+\par
+\par
+Run Time Error\par
+\par
+\par
+Garbage Value\par
+\par
+Question: 90\par
+What is the output of this program?\par
+\par
+include\par
+void test(int *a, int *b)\par
+\{\par
+a = b;\par
+*a = 15;\par
+\}\par
+int x = 10, y = 20;\par
+int main()\par
+\{\par
+test(&x, &y);\par
+printf(\ldblquote %d %d\rdblquote , x, y);\par
+return 0;\par
+\}\par
+\par
+\par
+\par
+15 15\par
+\par
+\par
+10 15\par
+\par
+\par
+10 20\par
+\par
+\par
+15 20\par
+\par
+Question: 91\par
+What does the following statment mean?\par
+\par
+int (*ptr)[5];\par
+\par
+\par
+ptr is an array of 5 integers\par
+\par
+\par
+ptr is a pointer to an array of 5 integers\par
+\par
+\par
+ptr is array of pointers to 5 integers\par
+\par
+\par
+ptr is an pointer to array\par
+\par
+Question: 92\par
+What is the output of this program?\par
+\par
+include\par
+int main()\par
+\{\par
+int a = 5;\par
+void *ptr = &a ;\par
+printf(\ldblquote %f\rdblquote , (float)ptr);\par
+return 0;\par
+\}\par
+\par
+\par
+\par
+5\par
+\par
+\par
+5\par
+\par
+\par
+0\par
+\par
+\par
+0\par
+\par
+Question: 93\par
+What is the output of the given code ?\par
+\par
+include\par
+void main()\par
+\{\par
+int a = 0 ;\par
+int *const ptr = &a ;\par
+printf(\ldblquote %p \ldblquote , ptr);\par
+ptr++;\par
+printf(\ldblquote %p \ldblquote , ptr);\par
+\}\par
+\par
+\par
+\par
+0 1\par
+\par
+\par
+compilation Error\par
+\par
+\par
+Run Time Error\par
+\par
+\par
+None of the above\par
+\par
+Question: 94\par
+What is the output of this program?\par
+\par
+include\par
+void main()\par
+\{\par
+int a = 5 ;\par
+int *b = &a ;\par
+int **c = &b ;\par
+printf(\ldblquote %d %d %d\rdblquote , a, *b, **c);\par
+\}\par
+\par
+\par
+\par
+5 garbage value garbage value\par
+\par
+\par
+5 5 garbage value\par
+\par
+\par
+5 5 5\par
+\par
+\par
+Error\par
+\par
+Question: 95\par
+What is the output of this program?\par
+\par
+include\par
+void main()\par
+\{\par
+int arr[3] = \{1, 2, 3\};\par
+int *ptr = arr;\par
+int **temp = &ptr ;\par
+printf(\ldblquote %p %p\rdblquote , *temp, arr);\par
+\}\par
+\par
+\par
+\par
+Same Address\par
+\par
+\par
+Different Address\par
+\par
+\par
+1 2\par
+\par
+\par
+2 3\par
+\par
+Question: 96\par
+The pointer ptr points to which string?\par
+\par
+char *ptr;\par
+char myString[]=\rdblquote letsfind\rdblquote ;\par
+ptr=myString\par
+ptr+=5;\par
+\par
+\par
+\par
+find\par
+\par
+\par
+ind\par
+\par
+\par
+letsf\par
+\par
+\par
+f\par
+\par
+Question: 97\par
+What will be the output ?\par
+\par
+void main()\par
+\{\par
+char far *farther, *farthest;\par
+printf(\ldblquote %d %d\rdblquote , sizeof(farther), sizeof(farthest));\par
+\}\par
+\par
+\par
+\par
+4 2\par
+\par
+\par
+2 2\par
+\par
+\par
+4 4\par
+\par
+\par
+2 4\par
+\par
+Question: 98\par
+What is the output of this program?\par
+\par
+include\par
+void test(int * , int *);\par
+void main()\par
+\{\par
+int a = 5 , b = 6;\par
+test(&a,&b);\par
+printf(\ldblquote %d %d\rdblquote ,a,b);\par
+\}\par
+void test(int *p, int *q)\par
+\{\par
+*p = *p * *q;\par
+*q = *p + *q;\par
+*p = *p - *q;\par
+\}\par
+\par
+\par
+\par
+-6 36\par
+\par
+\par
+6 36\par
+\par
+\par
+36 6\par
+\par
+\par
+-42\par
+\par
+Question: 99\par
+Are the three declarations char **apple, char *apple[], and char apple[][] same?\par
+\par
+\par
+\par
+TRUE\par
+\par
+\par
+FALSE\par
+\par
+\par
+May Be\par
+\par
+\par
+Can\rquote t Say\par
+\par
+Question: 100\par
+Is the NULL pointer same as an uninitialised pointer?\par
+\par
+\par
+\par
+Yes\par
+\par
+\par
+No\par
+\par
+\par
+May Be\par
+\par
+\par
+Can\rquote t Say\par
+\par
+Question: 101\par
+Which of the following statements correct about k used in the below statement?\par
+\par
+char ****k;\par
+\par
+\par
+\par
+k is a pointer to a pointer to a pointer to a char\par
+\par
+\par
+k is a pointer to a pointer to a pointer to a pointer to a char\par
+\par
+\par
+k is a pointer to a char pointer\par
+\par
+\par
+k is a pointer to a pointer to a char\par
+\par
+Question: 102\par
+Is there any difference between the following two statements?\par
+\par
+char *p=0;\par
+char *t=NULL;\par
+\par
+\par
+\par
+Yes\par
+\par
+\par
+No\par
+\par
+\par
+May Be\par
+\par
+\par
+Can\rquote t Say\par
+\par
+Question: 103\par
+Is this a correct way for NULL pointer assignment?\par
+\par
+int i=0;\par
+char q=(char)i;\par
+\par
+\par
+\par
+Yes\par
+\par
+\par
+No\par
+\par
+\par
+May Be\par
+\par
+\par
+Can\rquote t Say\par
+\par
+Question: 104\par
+What is the output of C Program with functions and pointers.?\par
+int myshow(int);\par
+\par
+void main()\par
+\{\par
+int a=10;\par
+myshow(a);\par
+myshow(&a);\par
+\}\par
+\par
+int myshow(int b)\par
+\{\par
+printf(\ldblquote Received %d, \ldblquote , b);\par
+\}\par
+\par
+\par
+\par
+Received 10, Received 10,\par
+\par
+\par
+Received 10, Received RANDOMNumber,\par
+\par
+\par
+Received 10, Received RANDOMNumber, with a compiler warning\par
+\par
+\par
+Compiler error\par
+\par
+Question: 105\par
+What is the output of C Program with functions and pointers.?\par
+int myshow(int *);\par
+\par
+void main()\par
+\{\par
+int a=10;\par
+myshow(&a);\par
+\}\par
+\par
+int myshow(int *k)\par
+\{\par
+printf(\ldblquote Received %d, \ldblquote , *k);\par
+\}\par
+\par
+\par
+\par
+Received RANDOMNumber,\par
+\par
+\par
+Recived 10,\par
+\par
+\par
+Received 10,\par
+\par
+\par
+Compiler error\par
+\par
+Question: 106\par
+What is the output of C Program with functions and pointers.?\par
+void myshow(int *);\par
+\par
+void main()\par
+\{\par
+int a=10;\par
+printf(\ldblquote %d \ldblquote , a);\par
+myshow(&a);\par
+printf(\ldblquote %d\rdblquote , a);\par
+\par
+\}\par
+\par
+void myshow(int *k)\par
+\{\par
+*k=20;\par
+\}\par
+\par
+\par
+\par
+10 10\par
+\par
+\par
+20 20\par
+\par
+\par
+10 20\par
+\par
+\par
+Compiler error\par
+\par
+Question: 107\par
+What is the output of C Program with functions and pointers.?\par
+int main()\par
+\{\par
+int b=25;\par
+//b memory location=1234;\par
+int *p = b;\par
+printf(\ldblquote %d %d\rdblquote , b, p);\par
+\par
+return 0;\par
+\}\par
+\par
+\par
+\par
+25 1234\par
+\par
+\par
+25 0\par
+\par
+\par
+25 25\par
+\par
+\par
+Compiler error\par
+\par
+Question: 108\par
+What is the output of C Program with functions and pointers.?\par
+int main()\par
+\{\par
+int b=25;\par
+//b memory location=1234;\par
+int *p;\par
+p=&b;\par
+printf(\ldblquote %d %d %d\rdblquote , &b, p);\par
+return 0;\par
+\}\par
+\par
+\par
+\par
+25 25\par
+\par
+\par
+1234 1234\par
+\par
+\par
+25 1234\par
+\par
+\par
+1234 25\par
+\par
+Question: 109\par
+What do you call STAR * and Ampersand & in a c program context.?\par
+int a=10, *p;\par
+p = &a;\par
+printf(\ldblquote %d %d\rdblquote , a, *p);\par
+\par
+\par
+\par
+= ADDRESS OF operator, & = VALUE AT operator\par
+\par
+= ADDRESS OF operator, & = ADDRESS OF operator\par
+\par
+= VALUE AT operator, & = ADDRESS OF operator\par
+\par
+= VALUE AT operator, & = VALUE AT operator\par
+Question: 110\par
+What is the output of a C Program with functions and pointers.?\par
+void texas(int *,int *);\par
+int main()\par
+\{\par
+int a=11, b=22;\par
+printf(\ldblquote Before=%d %d, \ldblquote , a, b);\par
+texas(&a, &b);\par
+printf(\ldblquote After=%d %d\rdblquote , a, b);\par
+\par
+return 0;\par
+\}\par
+void texas(int *i, int *j)\par
+\{\par
+*i = 55;\par
+*j = 65;\par
+\}\par
+\par
+\par
+\par
+Before=11 22, After=11 22\par
+\par
+\par
+Before=11 22, After=55 65\par
+\par
+\par
+Before=11 22, After=0 0\par
+\par
+\par
+Compiler error\par
+\par
+Question: 111\par
+What is the output of C Program with pointers.?\par
+int main()\par
+\{\par
+int a = 4;\par
+int *p;\par
+p=&a;\par
+while(*p > 0)\par
+\{\par
+printf(\ldblquote %d \ldblquote , *p);\par
+(*p)\f1\endash ;\par
+\}\par
+return 0;\par
+\}\par
+\par
+\par
+\par
+0 0 0 0\par
+\par
+\par
+4 4 4 4\par
+\par
+\par
+4 3 2 1\par
+\par
+\par
+Compiler error\par
+\par
+Question: 112\par
+What is the output of C Program with pointers.?\par
+int main()\par
+\{\par
+int a=10;\par
+int *p, **q;\par
+p=&a;\par
+q=&p;\par
+printf(\ldblquote %d \ldblquote , a);\par
+*p=15;\par
+printf(\ldblquote %d \ldblquote , a);\par
+**q=20;\par
+printf(\ldblquote %d \ldblquote , a);\par
+return 0;\par
+\}\par
+\par
+\par
+\par
+10 10 10\par
+\par
+\par
+10 0 0\par
+\par
+\par
+10 15 20\par
+\par
+\par
+Compiler error\par
+\par
+Question: 113\par
+What is the output of C Program with pointers.?\par
+int main()\par
+\{\par
+int a=20;\par
+int *p, *q;\par
+p=&a;\par
+q=p;\par
+printf(\ldblquote %d \ldblquote , a);\par
+*p=30;\par
+printf(\ldblquote %d \ldblquote , a);\par
+*q=40;\par
+printf(\ldblquote %d \ldblquote , a);\par
+return 0;\par
+\}\par
+\par
+\par
+\par
+20 0 0\par
+\par
+\par
+20 20 20\par
+\par
+\par
+20 30 40\par
+\par
+\par
+Compiler error\par
+\par
+Question: 114\par
+What is the output of C Program with pointers.?\par
+int main()\par
+\{\par
+int a=20;\par
+//a memory location=1234\par
+printf(\ldblquote %d %d %d\rdblquote , a, &a, *(&a));\par
+return 0;\par
+\}\par
+\par
+\par
+\par
+20 20 20\par
+\par
+\par
+20 1234 1234\par
+\par
+\par
+20 1234 20\par
+\par
+\par
+20 20 20\par
+\par
+Question: 115\par
+What is the output of C Program with Recursive Function.?\par
+int mul(int);\par
+int main()\par
+\{\par
+int b;\par
+b = mul(3);\par
+printf(\ldblquote %d\rdblquote , b);\par
+\}\par
+int mul(int x)\par
+\{\par
+if(x<=1)\par
+return 1;\par
+return (x * mul(x-1));\par
+\}\par
+\par
+\par
+\par
+2\par
+\par
+\par
+3\par
+\par
+\par
+6\par
+\par
+\par
+1\par
+\par
+Question: 116\par
+void main()\par
+\{\par
+char far *farther, *farthest\rquote\par
+printf(\ldblquote %d..%d\rdblquote ,sizeof(farther),sizeof(farthest));\par
+\}\par
+\par
+\par
+\par
+4..2\par
+\par
+\par
+2..2\par
+\par
+\par
+4..4\par
+\par
+\par
+2..4\par
+\par
+Question: 117\par
+What is the option of this code.\par
+main()\{\par
+char *str1=\rdblquote abcd\rdblquote ;\par
+char str2[]=\rdblquote abcd\rdblquote ;\par
+printf(\ldblquote %d %d %d\rdblquote ,sizeof(str1),sizeof(str2),sizeof(\ldblquote abcd\rdblquote ));\par
+\}\par
+\par
+\par
+\par
+2 5 5\par
+\par
+\par
+2 4 4\par
+\par
+\par
+8 5 5\par
+\par
+\par
+2 4 5\par
+\par
+Question: 118\par
+Multiple values of the same variable can be tested using _.\par
+\par
+\par
+\par
+switch\par
+\par
+\par
+for\par
+\par
+\par
+Function\par
+\par
+\par
+All of these\par
+\par
+Question: 119\par
+Choose the best answer.\par
+\par
+Prior to using a pointer variable\par
+\par
+\par
+\par
+It should be declared.\par
+\par
+\par
+It should be initialized.\par
+\par
+\par
+It should be both declared and initialized.\par
+\par
+\par
+None of these.\par
+\par
+Question: 120\par
+A pointer variable can be\par
+\par
+\par
+\par
+Passed to a function\par
+\par
+\par
+Changed within a function\par
+\par
+\par
+Returned by a function\par
+\par
+\par
+Can be assigned an integer value\par
+\par
+Question: 121\par
+What will be the output of the following C code?\par
+void main() \{\par
+int a[] = \{1,2,3,4,5\}, *p;\par
+p = a;\par
+++*p;\par
+printf(\ldblquote %d \ldblquote , *p);\par
+p += 2;\par
+printf(\ldblquote %d \ldblquote , *p);\par
+\}\par
+\par
+\par
+\par
+24\par
+\par
+\par
+34\par
+\par
+\par
+22\par
+\par
+\par
+23\par
+\par
+Question: 122\par
+What is the output of the following C code?\par
+char *ptr;\par
+char mystring[] = \ldblquote abcdefg\rdblquote ;\par
+ptr = myString;\par
+ptr += 5;\par
+\par
+\par
+\par
+fg\par
+\par
+\par
+efg\par
+\par
+\par
+defg\par
+\par
+\par
+cdefg\par
+\par
+\par
+bcdefg\par
+\par
+Question: 123\par
+Will this program compile?\par
+int main() \{\par
+char str[5] = \ldblquote LetsFind\rdblquote ;\par
+return 0;\par
+\}\par
+\par
+\par
+\par
+True\par
+\par
+\par
+False\par
+\par
+Question: 124\par
+You can access elements of an array by _.\par
+\par
+\par
+\par
+values\par
+\par
+\par
+indices\par
+\par
+\par
+memory addresses\par
+\par
+\par
+All of the above\par
+\par
+Question: 125\par
+Array elements are always stored in _ memory locations.\par
+\par
+\par
+\par
+Random\par
+\par
+\par
+Sequential\par
+\par
+\par
+Both A and B\par
+\par
+\par
+None of the above\par
+\par
+Question: 126\par
+Let x is an integer array with three elements having value 10, 20, and 30. What will be the output of the following statement?\par
+\par
+printf(\ldblquote %u\rdblquote ,x);\par
+\par
+\par
+\par
+Prints the value of 0th element (i.e., 10)\par
+\par
+\par
+Prints the garbage value\par
+\par
+\par
+An error occurs\par
+\par
+\par
+Print the address of the array (i.e., the address of first (0th) element\par
+\par
+Question: 127\par
+Is the NULL pointer same as an uninitialised pointer?\par
+\par
+\par
+\par
+True\par
+\par
+\par
+False\par
+\par
+Question: 128\par
+What will be the output of the program.\par
+char *p = 0;\par
+char *t = NULL;\par
+\par
+\par
+\par
+Yes\par
+\par
+\par
+No\par
+\par
+Question: 129\par
+What is scanf() in c programming?\par
+\par
+\par
+\par
+The layout of an input string\par
+\par
+\par
+Array\par
+\par
+\par
+Output function\par
+\par
+\par
+All of the above\par
+\par
+Question: 130\par
+Find the output of the following program?\par
+void main() \{\par
+char *msg = \ldblquote hi\rdblquote ;\par
+printf(msg);\par
+\}\par
+\par
+\par
+\par
+hi\par
+\par
+\par
+h\par
+\par
+\par
+hi followed by garbage value\par
+\par
+\par
+None of Error\par
+\par
+Question: 131\par
+What will be the output of the following C code?\par
+void main() \{\par
+int a[] = \{1,2,3,4,5\}, *p;\par
+p = a;\par
+++*p;\par
+printf(\ldblquote %d \ldblquote , *p);\par
+p += 2;\par
+printf(\ldblquote %d \ldblquote , *p);\par
+\}\par
+\par
+\par
+\par
+24\par
+\par
+\par
+34\par
+\par
+\par
+22\par
+\par
+\par
+23\par
+\par
+Question: 132\par
+What is output of below program?\par
+int main()\par
+\{\par
+const int a = 10;\par
+printf(\ldblquote %d\rdblquote ,++a);\par
+return 0;\par
+\}\par
+\par
+\par
+\par
+11\par
+\par
+\par
+10\par
+\par
+\par
+Compilation Error\par
+\par
+\par
+0\par
+\par
+Question: 133\par
+What is the storage class for variable A in below code?\par
+\par
+int main()\par
+\{\par
+int A;\par
+A = 10;\par
+printf(\ldblquote %d\rdblquote , A);\par
+return 0;\par
+\}\par
+\par
+\par
+\par
+extern\par
+\par
+\par
+auto\par
+\par
+\par
+register\par
+\par
+\par
+static\par
+\par
+Question: 134\par
+What is the output of the following code snippet?\par
+\par
+int arr[5] = \{1, 2, 3, 4, 5\};\par
+int *ptr = &arr[2];\par
+printf(\ldblquote %d\rdblquote , *ptr - 2);\par
+\par
+\par
+\par
+1\par
+\par
+\par
+2\par
+\par
+\par
+3\par
+\par
+\par
+4\par
+\par
+Question: 135\par
+What is the output of the following code snippet?\par
+\par
+int arr[5] = \{1, 2, 3, 4, 5\};\par
+int *ptr = arr + 2;\par
+printf(\ldblquote %d\rdblquote , *ptr - 2);\par
+\par
+\par
+\par
+1\par
+\par
+\par
+2\par
+\par
+\par
+3\par
+\par
+\par
+4\par
+\par
+Question: 136\par
+What is the output of the following code snippet?\par
+\par
+int arr[5] = \{1, 2, 3, 4, 5\};\par
+int *ptr = &arr[1];\par
+printf(\ldblquote %d\rdblquote , *ptr - 1);\par
+\par
+\par
+\par
+1\par
+\par
+\par
+2\par
+\par
+\par
+3\par
+\par
+\par
+4\par
+\par
+Question: 137\par
+What is the output of the following code snippet?\par
+\par
+int arr[5] = \{1, 2, 3, 4, 5\};\par
+int *ptr = arr + 4;\par
+printf(\ldblquote %d\rdblquote , *ptr + 1);\par
+\par
+\par
+\par
+1\par
+\par
+\par
+2\par
+\par
+\par
+3\par
+\par
+\par
+4\par
+\par
+Question: 138\par
+What is the output of the following code snippet?\par
+\par
+int arr[5] = \{1, 2, 3, 4, 5\};\par
+int *ptr = arr + 2;\par
+printf(\ldblquote %d\rdblquote , *ptr + 2);\par
+\par
+\par
+\par
+1\par
+\par
+\par
+2\par
+\par
+\par
+3\par
+\par
+\par
+4\par
+\par
+Question: 139\par
+What is the output of the following code snippet?\par
+\par
+int arr[5] = \{1, 2, 3, 4, 5\};\par
+int *ptr = &arr[1];\par
+printf(\ldblquote %d\rdblquote , *(ptr + 1));\par
+\par
+\par
+\par
+1\par
+\par
+\par
+2\par
+\par
+\par
+3\par
+\par
+\par
+4\par
+\par
+Question: 140\par
+What is the output of the following code snippet?\par
+\par
+int arr[5] = \{1, 2, 3, 4, 5\};\par
+int *ptr = arr + 3;\par
+printf(\ldblquote %d\rdblquote , *ptr + 1);\par
+\par
+\par
+\par
+1\par
+\par
+\par
+2\par
+\par
+\par
+3\par
+\par
+\par
+4\par
+\par
+Question: 141\par
+What is the output of the following code snippet?\par
+\par
+int arr[5] = \{1, 2, 3, 4, 5\};\par
+int *ptr = &arr[3];\par
+printf(\ldblquote %d\rdblquote , *(ptr - 1));\par
+\par
+\par
+\par
+1\par
+\par
+\par
+2\par
+\par
+\par
+3\par
+\par
+\par
+4\par
+\par
+Question: 142\par
+What is the output of the following code snippet?\par
+\par
+int arr[5] = \{1, 2, 3, 4, 5\};\par
+int *ptr = &arr[2];\par
+printf(\ldblquote %d\rdblquote , *(ptr - 1));\par
+\par
+\par
+\par
+1\par
+\par
+\par
+2\par
+\par
+\par
+3\par
+\par
+\par
+4\par
+\par
+Question: 143\par
+What is the output of the following code snippet?\par
+\par
+int arr[5] = \{1, 2, 3, 4, 5\};\par
+int *ptr = arr + 2;\par
+printf(\ldblquote %d\rdblquote , *ptr + 1);\par
+\par
+\par
+\par
+1\par
+\par
+\par
+2\par
+\par
+\par
+3\par
+\par
+\par
+4\par
+\par
+Question: 144\par
+What is the output of the following code snippet?\par
+\par
+int arr[5] = \{1, 2, 3, 4, 5\};\par
+int *ptr = &arr[1];\par
+printf(\ldblquote %d\rdblquote , ptr[1]);\par
+\par
+\par
+\par
+1\par
+\par
+\par
+2\par
+\par
+\par
+3\par
+\par
+\par
+4\par
+\par
+Question: 145\par
+What is the output of the following code snippet?\par
+\par
+int arr[5] = \{1, 2, 3, 4, 5\};\par
+int *ptr = arr + 1;\par
+printf(\ldblquote %d\rdblquote , *(ptr + 1));\par
+\par
+\par
+\par
+1\par
+\par
+\par
+2\par
+\par
+\par
+3\par
+\par
+\par
+4\par
+\par
+Question: 146\par
+What is the output of the following code snippet?\par
+\par
+int arr[5] = \{1, 2, 3, 4, 5\};\par
+int *ptr = &arr[1];\par
+printf(\ldblquote %d\rdblquote , ptr[2]);\par
+\par
+\par
+\par
+1\par
+\par
+\par
+2\par
+\par
+\par
+3\par
+\par
+\par
+4\par
+\par
+Question: 147\par
+What is the output of the following code snippet?\par
+\par
+int arr[5] = \{1, 2, 3, 4, 5\};\par
+int *ptr = arr + 4;\par
+printf(\ldblquote %d\rdblquote , *(ptr - 2));\par
+\par
+\par
+\par
+1\par
+\par
+\par
+2\par
+\par
+\par
+3\par
+\par
+\par
+4\par
+\par
+Question: 148\par
+What is the output of the following code snippet?\par
+\par
+int arr[5] = \{1, 2, 3, 4, 5\};\par
+int *ptr = &arr[3];\par
+printf(\ldblquote %d\rdblquote , *ptr - 1);\par
+\par
+\par
+\par
+1\par
+\par
+\par
+2\par
+\par
+\par
+3\par
+\par
+\par
+4\par
+\par
+Question: 149\par
+What is the output of the following code snippet?\par
+\par
+int arr[5] = \{1, 2, 3, 4, 5\};\par
+int *ptr = &arr[3];\par
+printf(\ldblquote %d\rdblquote , *ptr - 1);\par
+\par
+\par
+\par
+1\par
+\par
+\par
+2\par
+\par
+\par
+3\par
+\par
+\par
+4\par
+\par
+Question: 150\par
+What is the output of the following code snippet?\par
+\par
+int arr[5] = \{1, 2, 3, 4, 5\};\par
+int *ptr = &arr[2];\par
+printf(\ldblquote %d\rdblquote , *ptr - 2);\par
+\par
+\par
+\par
+1\par
+\par
+\par
+2\par
+\par
+\par
+3\par
+\par
+\par
+4\par
+\f0\par
+}
+ 

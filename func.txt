@@ -1,0 +1,4 @@
+E:\SEM 1\COMP PROGRAMING CAP 118-119\C files\func.o	func.c:(.text+0x2c): multiple definition of `main'
+E:\SEM 1\COMP PROGRAMING CAP 118-119\C files\for.o	for.c:(.text+0x0): first defined here
+E:\SEM 1\COMP PROGRAMING CAP 118-119\C files\collect2.exe	[Error] ld returned 1 exit status
+25		E:\SEM 1\COMP PROGRAMING CAP 118-119\C files\Makefile.win	recipe for target 'Sep22.exe' failed
